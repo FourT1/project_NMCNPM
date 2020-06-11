@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbHocKy = new System.Windows.Forms.Label();
-            this.cbHocKy = new System.Windows.Forms.ComboBox();
-            this.lbNamHoc = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btThoat = new System.Windows.Forms.Button();
-            this.btInPhieu = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTienDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTienPhaiDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTienConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbNamHoc = new System.Windows.Forms.Label();
+            this.cbHocKy = new System.Windows.Forms.ComboBox();
+            this.lbHocKy = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btInPhieu = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +65,41 @@
             this.dataGridView1.Size = new System.Drawing.Size(1311, 156);
             this.dataGridView1.TabIndex = 11;
             // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.Width = 125;
+            // 
+            // MSSV
+            // 
+            this.MSSV.HeaderText = "Mã số sinh viên";
+            this.MSSV.MinimumWidth = 6;
+            this.MSSV.Name = "MSSV";
+            this.MSSV.Width = 300;
+            // 
+            // SoTienDangKy
+            // 
+            this.SoTienDangKy.HeaderText = "Số tiền đăng ký";
+            this.SoTienDangKy.MinimumWidth = 6;
+            this.SoTienDangKy.Name = "SoTienDangKy";
+            this.SoTienDangKy.Width = 300;
+            // 
+            // SoTienPhaiDong
+            // 
+            this.SoTienPhaiDong.HeaderText = "Số tiền phải đóng";
+            this.SoTienPhaiDong.MinimumWidth = 6;
+            this.SoTienPhaiDong.Name = "SoTienPhaiDong";
+            this.SoTienPhaiDong.Width = 300;
+            // 
+            // SoTienConLai
+            // 
+            this.SoTienConLai.HeaderText = "Số tiền còn lại";
+            this.SoTienConLai.MinimumWidth = 6;
+            this.SoTienConLai.Name = "SoTienConLai";
+            this.SoTienConLai.Width = 300;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.textBox1);
@@ -76,25 +111,26 @@
             this.panel1.Size = new System.Drawing.Size(1311, 61);
             this.panel1.TabIndex = 12;
             // 
-            // panel2
+            // textBox1
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(12, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1314, 182);
-            this.panel2.TabIndex = 13;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(836, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(155, 34);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.Text = "2020";
             // 
-            // lbHocKy
+            // lbNamHoc
             // 
-            this.lbHocKy.AutoSize = true;
-            this.lbHocKy.BackColor = System.Drawing.Color.Silver;
-            this.lbHocKy.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHocKy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbHocKy.Location = new System.Drawing.Point(336, 11);
-            this.lbHocKy.Name = "lbHocKy";
-            this.lbHocKy.Size = new System.Drawing.Size(118, 33);
-            this.lbHocKy.TabIndex = 12;
-            this.lbHocKy.Text = "Học kỳ:";
+            this.lbNamHoc.AutoSize = true;
+            this.lbNamHoc.BackColor = System.Drawing.Color.Silver;
+            this.lbNamHoc.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNamHoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbNamHoc.Location = new System.Drawing.Point(677, 8);
+            this.lbNamHoc.Name = "lbNamHoc";
+            this.lbNamHoc.Size = new System.Drawing.Size(153, 33);
+            this.lbNamHoc.TabIndex = 14;
+            this.lbNamHoc.Text = "Năm học :";
             // 
             // cbHocKy
             // 
@@ -109,26 +145,25 @@
             this.cbHocKy.TabIndex = 13;
             this.cbHocKy.Text = "Chọn học kỳ";
             // 
-            // lbNamHoc
+            // lbHocKy
             // 
-            this.lbNamHoc.AutoSize = true;
-            this.lbNamHoc.BackColor = System.Drawing.Color.Silver;
-            this.lbNamHoc.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNamHoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNamHoc.Location = new System.Drawing.Point(677, 8);
-            this.lbNamHoc.Name = "lbNamHoc";
-            this.lbNamHoc.Size = new System.Drawing.Size(153, 33);
-            this.lbNamHoc.TabIndex = 14;
-            this.lbNamHoc.Text = "Năm học :";
+            this.lbHocKy.AutoSize = true;
+            this.lbHocKy.BackColor = System.Drawing.Color.Silver;
+            this.lbHocKy.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHocKy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbHocKy.Location = new System.Drawing.Point(336, 11);
+            this.lbHocKy.Name = "lbHocKy";
+            this.lbHocKy.Size = new System.Drawing.Size(118, 33);
+            this.lbHocKy.TabIndex = 12;
+            this.lbHocKy.Text = "Học kỳ:";
             // 
-            // textBox1
+            // panel2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(836, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 34);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "2020";
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Location = new System.Drawing.Point(12, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1314, 182);
+            this.panel2.TabIndex = 13;
             // 
             // btThoat
             // 
@@ -158,42 +193,8 @@
             this.panel3.Controls.Add(this.btInPhieu);
             this.panel3.Location = new System.Drawing.Point(12, 256);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1261, 63);
+            this.panel3.Size = new System.Drawing.Size(1311, 63);
             this.panel3.TabIndex = 16;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            // 
-            // MSSV
-            // 
-            this.MSSV.HeaderText = "Mã số sinh viên";
-            this.MSSV.MinimumWidth = 6;
-            this.MSSV.Name = "MSSV";
-            this.MSSV.Width = 300;
-            // 
-            // SoTienDangKy
-            // 
-            this.SoTienDangKy.HeaderText = "Số tiền đăng ký";
-            this.SoTienDangKy.MinimumWidth = 6;
-            this.SoTienDangKy.Name = "SoTienDangKy";
-            this.SoTienDangKy.Width = 300;
-            // 
-            // SoTienPhaiDong
-            // 
-            this.SoTienPhaiDong.HeaderText = "Số tiền phải đóng";
-            this.SoTienPhaiDong.MinimumWidth = 6;
-            this.SoTienPhaiDong.Name = "SoTienPhaiDong";
-            this.SoTienPhaiDong.Width = 300;
-            // 
-            // SoTienConLai
-            // 
-            this.SoTienConLai.HeaderText = "Số tiền còn lại";
-            this.SoTienConLai.MinimumWidth = 6;
-            this.SoTienConLai.Name = "SoTienConLai";
-            this.SoTienConLai.Width = 300;
             // 
             // Form1
             // 
