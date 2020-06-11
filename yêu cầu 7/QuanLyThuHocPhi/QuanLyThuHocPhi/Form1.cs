@@ -26,5 +26,15 @@ namespace QuanLyThuHocPhi
         {
 
         }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSoTienDangKy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
