@@ -1,0 +1,10 @@
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\bin\Debug\TraCuu_PhieuThu.exe.config
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\bin\Debug\TraCuu_PhieuThu.exe
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\bin\Debug\TraCuu_PhieuThu.pdb
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.csprojAssemblyReference.cache
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.Form1.resources
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.Properties.Resources.resources
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.csproj.GenerateResource.cache
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.csproj.CoreCompileInputs.cache
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.exe
+C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\TraCuu_PhieuThu\TraCuu_PhieuThu\obj\Debug\TraCuu_PhieuThu.pdb
