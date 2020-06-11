@@ -8,3 +8,13 @@ C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\DKHP\DKHP\obj\Debug\DKHP.csproj.CoreCompil
 C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\DKHP\DKHP\obj\Debug\DKHP.exe
 C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\DKHP\DKHP\obj\Debug\DKHP.pdb
 C:\Users\DarkTaiga\Desktop\NMCNPM\yc5\DKHP\DKHP\obj\Debug\DKHP.Form1.resources
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\bin\Debug\DKHP.exe.config
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\bin\Debug\DKHP.exe
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\bin\Debug\DKHP.pdb
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.csprojAssemblyReference.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.Form1.resources
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.Properties.Resources.resources
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.csproj.GenerateResource.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.csproj.CoreCompileInputs.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.exe
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\DKHP\DKHP\obj\Debug\DKHP.pdb

@@ -1,0 +1,10 @@
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\bin\Debug\ChuaDongHP.exe.config
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\bin\Debug\ChuaDongHP.exe
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\bin\Debug\ChuaDongHP.pdb
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.csprojAssemblyReference.cache
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.Form1.resources
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.Properties.Resources.resources
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.csproj.GenerateResource.cache
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.csproj.CoreCompileInputs.cache
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.exe
+C:\Users\HPs\Desktop\ChuaDongHP\ChuaDongHP\obj\Debug\ChuaDongHP.pdb
