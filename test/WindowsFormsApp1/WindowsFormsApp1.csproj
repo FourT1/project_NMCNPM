@@ -46,6 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DKHP.designer.cs">
+      <DependentUpon>DKHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSMonHocMo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSMonHocMo.designer.cs">
+      <DependentUpon>DSMonHocMo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSSVChuaDongHp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".designer.cs">
+      <DependentUpon>DSSVChuaDongHp.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapCTHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapCTHoc.designer.cs">
+      <DependentUpon>NhapCTHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuPhieuThuHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuPhieuThuHP.designer.cs">
+      <DependentUpon>TraCuuPhieuThuHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuDKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuDKHP.designer.cs">
+      <DependentUpon>TraCuuDKHP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,18 +91,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YC1.cs">
+    <Compile Include="QuanLySV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YC1.Designer.cs">
-      <DependentUpon>YC1.cs</DependentUpon>
+    <Compile Include="QuanLySV.Designer.cs">
+      <DependentUpon>QuanLySV.cs</DependentUpon>
     </Compile>
-    <Compile Include="YC2.cs">
+    <Compile Include="DSMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YC2.Designer.cs">
-      <DependentUpon>YC2.cs</DependentUpon>
+    <Compile Include="DSMonHoc.Designer.cs">
+      <DependentUpon>DSMonHoc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DKHP.resx">
+      <DependentUpon>DKHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSMonHocMo.resx">
+      <DependentUpon>DSMonHocMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSVChuaDongHp.resx">
+      <DependentUpon>DSSVChuaDongHp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapCTHoc.resx">
+      <DependentUpon>NhapCTHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuPhieuThuHP.resx">
+      <DependentUpon>TraCuuPhieuThuHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuDKHP.resx">
+      <DependentUpon>TraCuuDKHP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,11 +133,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="YC1.resx">
-      <DependentUpon>YC1.cs</DependentUpon>
+    <EmbeddedResource Include="QuanLySV.resx">
+      <DependentUpon>QuanLySV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YC2.resx">
-      <DependentUpon>YC2.cs</DependentUpon>
+    <EmbeddedResource Include="DSMonHoc.resx">
+      <DependentUpon>DSMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

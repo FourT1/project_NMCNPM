@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class YC2 : Form
+    public partial class DSMonHoc : Form
     {
-        public YC2()
+        public DSMonHoc()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
