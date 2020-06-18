@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class YC2
+    partial class DSMonHoc
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.DimGray;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -70,6 +70,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Danh Sách Môn Học ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -258,14 +259,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã môn học ";
             // 
-            // YC2
+            // DSMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1493, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "YC2";
+            this.Name = "DSMonHoc";
             this.Text = "YC2";
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

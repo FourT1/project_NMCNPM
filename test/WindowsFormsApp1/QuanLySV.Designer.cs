@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class YC1
+    partial class QuanLySV
     {
         /// <summary>
         /// Required designer variable.
@@ -363,7 +363,7 @@
             this.label11.Text = "Danh sách sinh viên";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // YC1
+            // QuanLySV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -371,7 +371,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "YC1";
+            this.Name = "QuanLySV";
             this.Text = "YC1";
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
