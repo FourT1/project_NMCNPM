@@ -16,5 +16,10 @@ namespace DSMonHocMo
         {
             InitializeComponent();
         }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
