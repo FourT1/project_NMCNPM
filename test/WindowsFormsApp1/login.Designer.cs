@@ -35,12 +35,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.dsmonhoc = new System.Windows.Forms.Button();
+            this.dsmonhocmo = new System.Windows.Forms.Button();
+            this.dssvchuadonghp = new System.Windows.Forms.Button();
+            this.cthoc = new System.Windows.Forms.Button();
+            this.dkhocphan = new System.Windows.Forms.Button();
+            this.phieuthuhocphi = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,78 +111,78 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.login_Click);
             // 
-            // button2
+            // dsmonhoc
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(38, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(300, 44);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Danh Sách Môn Học";
-            this.button2.UseVisualStyleBackColor = true;
+            this.dsmonhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsmonhoc.Location = new System.Drawing.Point(38, 35);
+            this.dsmonhoc.Name = "dsmonhoc";
+            this.dsmonhoc.Size = new System.Drawing.Size(300, 44);
+            this.dsmonhoc.TabIndex = 3;
+            this.dsmonhoc.Text = "Danh Sách Môn Học";
+            this.dsmonhoc.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // dsmonhocmo
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(38, 122);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(300, 55);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Danh Sách Môn Học Mở";
-            this.button3.UseVisualStyleBackColor = true;
+            this.dsmonhocmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsmonhocmo.Location = new System.Drawing.Point(38, 122);
+            this.dsmonhocmo.Name = "dsmonhocmo";
+            this.dsmonhocmo.Size = new System.Drawing.Size(300, 55);
+            this.dsmonhocmo.TabIndex = 4;
+            this.dsmonhocmo.Text = "Danh Sách Môn Học Mở";
+            this.dsmonhocmo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // dssvchuadonghp
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(38, 212);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(300, 75);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Danh Sách SV Chưa Đóng Học Phí";
-            this.button4.UseVisualStyleBackColor = true;
+            this.dssvchuadonghp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dssvchuadonghp.Location = new System.Drawing.Point(38, 212);
+            this.dssvchuadonghp.Name = "dssvchuadonghp";
+            this.dssvchuadonghp.Size = new System.Drawing.Size(300, 75);
+            this.dssvchuadonghp.TabIndex = 5;
+            this.dssvchuadonghp.Text = "Danh Sách SV Chưa Đóng Học Phí";
+            this.dssvchuadonghp.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // cthoc
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(38, 323);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(300, 55);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Chương Trình Học";
-            this.button5.UseVisualStyleBackColor = true;
+            this.cthoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cthoc.Location = new System.Drawing.Point(38, 323);
+            this.cthoc.Name = "cthoc";
+            this.cthoc.Size = new System.Drawing.Size(300, 55);
+            this.cthoc.TabIndex = 6;
+            this.cthoc.Text = "Chương Trình Học";
+            this.cthoc.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // dkhocphan
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(38, 427);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(300, 51);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Đăng Ký Học Phần";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.dkhocphan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkhocphan.Location = new System.Drawing.Point(38, 427);
+            this.dkhocphan.Name = "dkhocphan";
+            this.dkhocphan.Size = new System.Drawing.Size(300, 51);
+            this.dkhocphan.TabIndex = 7;
+            this.dkhocphan.Text = "Đăng Ký Học Phần";
+            this.dkhocphan.UseVisualStyleBackColor = true;
+            this.dkhocphan.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // phieuthuhocphi
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(38, 526);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(300, 51);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Phiếu Thu Học Phí";
-            this.button7.UseVisualStyleBackColor = true;
+            this.phieuthuhocphi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phieuthuhocphi.Location = new System.Drawing.Point(38, 526);
+            this.phieuthuhocphi.Name = "phieuthuhocphi";
+            this.phieuthuhocphi.Size = new System.Drawing.Size(300, 51);
+            this.phieuthuhocphi.TabIndex = 8;
+            this.phieuthuhocphi.Text = "Phiếu Thu Học Phí";
+            this.phieuthuhocphi.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 602);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.phieuthuhocphi);
+            this.Controls.Add(this.dkhocphan);
+            this.Controls.Add(this.cthoc);
+            this.Controls.Add(this.dssvchuadonghp);
+            this.Controls.Add(this.dsmonhocmo);
+            this.Controls.Add(this.dsmonhoc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -209,12 +209,12 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button dsmonhoc;
+        private System.Windows.Forms.Button dsmonhocmo;
+        private System.Windows.Forms.Button dssvchuadonghp;
+        private System.Windows.Forms.Button cthoc;
+        private System.Windows.Forms.Button dkhocphan;
+        private System.Windows.Forms.Button phieuthuhocphi;
     }
 }
 
