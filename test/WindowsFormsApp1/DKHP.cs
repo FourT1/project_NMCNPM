@@ -77,5 +77,10 @@ namespace DKHP
         {
 
         }
+
+        private void DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
