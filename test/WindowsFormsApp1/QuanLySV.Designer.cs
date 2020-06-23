@@ -74,10 +74,10 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1470, 85);
@@ -123,6 +123,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAdd
             // 
@@ -279,6 +280,7 @@
             this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Giới tính:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel5
             // 

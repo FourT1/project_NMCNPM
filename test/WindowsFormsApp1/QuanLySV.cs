@@ -47,9 +47,19 @@ namespace WindowsFormsApp1
         private void cbbKhoa_SelectedIndexChanged(object sender, EventArgs e)
         {
             int mssv = Convert.ToInt32(cbbKhoa.SelectedValue);
-            var dap = new SqlDataAdapter("SELECT * FROM Khoa", conn);
+            var dap = new SqlDataAdapter("SELECT TenKhoa FROM Khoa", conn);
             var table = new DataTable();
             dap.Fill(table);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
