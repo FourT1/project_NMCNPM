@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace NhapCThoc
 {
-    public partial class YC1 : Form
+    public partial class fNhapCTHoc : Form
     {
-        public YC1()
+        public fNhapCTHoc()
         {
             InitializeComponent();
+        }
+
+        private void FNhapCTHoc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

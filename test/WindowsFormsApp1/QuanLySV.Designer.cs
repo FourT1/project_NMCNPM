@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class YC1
+    partial class QuanLySV
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cbbDoiTuong = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,12 +53,13 @@
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txtTen = new System.Windows.Forms.TextBox();
+            this.tbTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.tbMSSV = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.dgvSV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -68,6 +69,7 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,13 +84,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản lý sinh viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel8);
@@ -109,7 +112,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(186, 44);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Thêm";
+            this.button3.Text = "Sửa";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -118,17 +121,18 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 44);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Thêm";
+            this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(95, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 44);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(95, 226);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(186, 44);
+            this.btnAdd.TabIndex = 10;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel10
             // 
@@ -172,6 +176,7 @@
             this.cbbKhoa.Name = "cbbKhoa";
             this.cbbKhoa.Size = new System.Drawing.Size(328, 24);
             this.cbbKhoa.TabIndex = 1;
+            this.cbbKhoa.SelectedIndexChanged += new System.EventHandler(this.cbbKhoa_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -302,19 +307,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txtTen);
+            this.panel4.Controls.Add(this.tbTen);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(28, 106);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(454, 44);
             this.panel4.TabIndex = 1;
             // 
-            // txtTen
+            // tbTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(111, 9);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(340, 22);
-            this.txtTen.TabIndex = 1;
+            this.tbTen.Location = new System.Drawing.Point(111, 9);
+            this.tbTen.Name = "tbTen";
+            this.tbTen.Size = new System.Drawing.Size(339, 22);
+            this.tbTen.TabIndex = 1;
             // 
             // label3
             // 
@@ -327,19 +332,19 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txtID);
+            this.panel3.Controls.Add(this.tbMSSV);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(28, 56);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(454, 44);
             this.panel3.TabIndex = 0;
             // 
-            // txtID
+            // tbMSSV
             // 
-            this.txtID.Location = new System.Drawing.Point(111, 9);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(340, 22);
-            this.txtID.TabIndex = 0;
+            this.tbMSSV.Location = new System.Drawing.Point(111, 10);
+            this.tbMSSV.Name = "tbMSSV";
+            this.tbMSSV.Size = new System.Drawing.Size(339, 22);
+            this.tbMSSV.TabIndex = 1;
             // 
             // label2
             // 
@@ -363,16 +368,29 @@
             this.label11.Text = "Danh sách sinh viên";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // YC1
+            // dgvSV
+            // 
+            this.dgvSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSV.Location = new System.Drawing.Point(12, 443);
+            this.dgvSV.Name = "dgvSV";
+            this.dgvSV.RowHeadersWidth = 51;
+            this.dgvSV.RowTemplate.Height = 24;
+            this.dgvSV.Size = new System.Drawing.Size(1446, 284);
+            this.dgvSV.TabIndex = 6;
+            this.dgvSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // QuanLySV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1470, 727);
+            this.Controls.Add(this.dgvSV);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "YC1";
+            this.Name = "QuanLySV";
             this.Text = "YC1";
+            this.Load += new System.EventHandler(this.QuanLySV_Load);
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -390,6 +408,7 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,7 +419,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.ComboBox cbbDoiTuong;
         private System.Windows.Forms.Label label9;
@@ -421,11 +440,12 @@
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tbTen;
+        private System.Windows.Forms.TextBox tbMSSV;
+        private System.Windows.Forms.DataGridView dgvSV;
     }
 }
