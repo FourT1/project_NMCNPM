@@ -8,3 +8,21 @@ D:\Bài Tập\Môn Học 2019-2020\Học Kỳ 2\Lập Trình Công Nghệ Phần
 D:\Bài Tập\Môn Học 2019-2020\Học Kỳ 2\Lập Trình Công Nghệ Phần Mềm\đồ án\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\Bài Tập\Môn Học 2019-2020\Học Kỳ 2\Lập Trình Công Nghệ Phần Mềm\đồ án\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Bài Tập\Môn Học 2019-2020\Học Kỳ 2\Lập Trình Công Nghệ Phần Mềm\đồ án\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.Form1.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DSMonHocMo.DSMonHocMo.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\ChuaDongHP.Form1.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\NhapCThoc.fNhapCTHoc.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_PhieuThu.Form1.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.Form1.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.QuanLySV.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DSMonHoc.resources
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
