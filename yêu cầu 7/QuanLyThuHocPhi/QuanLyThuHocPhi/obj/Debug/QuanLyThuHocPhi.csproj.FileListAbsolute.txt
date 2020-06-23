@@ -1,0 +1,10 @@
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\bin\Debug\QuanLyThuHocPhi.exe.config
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\bin\Debug\QuanLyThuHocPhi.exe
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\bin\Debug\QuanLyThuHocPhi.pdb
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csprojAssemblyReference.cache
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.Form1.resources
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.Properties.Resources.resources
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csproj.GenerateResource.cache
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csproj.CoreCompileInputs.cache
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.exe
+C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.pdb
