@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QuanLyHocPhi
 {
-    public partial class Form1 : Form
+    public partial class SinhVienChuaDngHP : Form
     {
-        public Form1()
+        public SinhVienChuaDngHP()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

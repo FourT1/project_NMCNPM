@@ -1,0 +1,10 @@
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\bin\Debug\QuanLyHocPhi.exe.config
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\bin\Debug\QuanLyHocPhi.exe
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\bin\Debug\QuanLyHocPhi.pdb
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.Properties.Resources.resources
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.csproj.GenerateResource.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.csproj.CoreCompileInputs.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.exe
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.pdb
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.csprojAssemblyReference.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\QuanLyHocPhi\QuanLyHocPhi\obj\Debug\QuanLyHocPhi.Form1.resources
