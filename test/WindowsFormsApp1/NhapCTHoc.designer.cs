@@ -32,14 +32,15 @@
             this.btSuaCTHoc = new System.Windows.Forms.Button();
             this.btTraCuuCTHoc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Nganh = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbKhoa = new System.Windows.Forms.ComboBox();
             this.labelKhoa = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbbNganh = new System.Windows.Forms.ComboBox();
+            this.Nganh = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HocKi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -73,33 +74,24 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.cbbKhoa);
             this.panel2.Controls.Add(this.labelKhoa);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cbbNganh);
             this.panel2.Controls.Add(this.Nganh);
             this.panel2.Location = new System.Drawing.Point(3, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1157, 50);
             this.panel2.TabIndex = 0;
             // 
-            // Nganh
+            // cbbKhoa
             // 
-            this.Nganh.AutoSize = true;
-            this.Nganh.Location = new System.Drawing.Point(3, 10);
-            this.Nganh.Name = "Nganh";
-            this.Nganh.Size = new System.Drawing.Size(145, 29);
-            this.Nganh.TabIndex = 0;
-            this.Nganh.Text = "Ngành học:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(154, 10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(359, 30);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Chọn ngành học";
+            this.cbbKhoa.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbKhoa.FormattingEnabled = true;
+            this.cbbKhoa.Location = new System.Drawing.Point(722, 9);
+            this.cbbKhoa.Name = "cbbKhoa";
+            this.cbbKhoa.Size = new System.Drawing.Size(421, 30);
+            this.cbbKhoa.TabIndex = 2;
+            this.cbbKhoa.Text = "Chọn khoa";
             // 
             // labelKhoa
             // 
@@ -110,23 +102,33 @@
             this.labelKhoa.TabIndex = 2;
             this.labelKhoa.Text = "Khoa:";
             // 
-            // comboBox2
+            // cbbNganh
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(722, 9);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(421, 30);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.Text = "Chọn khoa";
+            this.cbbNganh.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbNganh.FormattingEnabled = true;
+            this.cbbNganh.Location = new System.Drawing.Point(154, 10);
+            this.cbbNganh.Name = "cbbNganh";
+            this.cbbNganh.Size = new System.Drawing.Size(359, 30);
+            this.cbbNganh.TabIndex = 1;
+            this.cbbNganh.Text = "Chọn ngành học";
+            // 
+            // Nganh
+            // 
+            this.Nganh.AutoSize = true;
+            this.Nganh.Location = new System.Drawing.Point(3, 10);
+            this.Nganh.Name = "Nganh";
+            this.Nganh.Size = new System.Drawing.Size(145, 29);
+            this.Nganh.TabIndex = 0;
+            this.Nganh.Text = "Ngành học:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
+            this.ID,
+            this.HocKi,
+            this.MaMonHoc,
+            this.GhiChu});
             this.dataGridView1.Location = new System.Drawing.Point(3, 68);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -134,26 +136,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(1157, 310);
             this.dataGridView1.TabIndex = 5;
             // 
-            // Column1
+            // ID
             // 
-            this.Column1.HeaderText = "Học Kì";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
+            this.ID.DataPropertyName = "ChuongTrinhHoc";
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            this.ID.Width = 150;
             // 
-            // Column2
+            // HocKi
             // 
-            this.Column2.HeaderText = "Mã Môn học";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 350;
+            this.HocKi.DataPropertyName = "ChuongTrinhHoc";
+            this.HocKi.HeaderText = "Học Kì";
+            this.HocKi.MinimumWidth = 8;
+            this.HocKi.Name = "HocKi";
+            this.HocKi.Width = 150;
             // 
-            // Column3
+            // MaMonHoc
             // 
-            this.Column3.HeaderText = "Ghi chú";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 600;
+            this.MaMonHoc.HeaderText = "Mã Môn học";
+            this.MaMonHoc.MinimumWidth = 8;
+            this.MaMonHoc.Name = "MaMonHoc";
+            this.MaMonHoc.Width = 350;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.MinimumWidth = 8;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Width = 600;
             // 
             // fNhapCTHoc
             // 
@@ -182,14 +194,15 @@
         private System.Windows.Forms.Button btSuaCTHoc;
         private System.Windows.Forms.Button btTraCuuCTHoc;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbbKhoa;
         private System.Windows.Forms.Label labelKhoa;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbNganh;
         private System.Windows.Forms.Label Nganh;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HocKi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaMonHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }
 
