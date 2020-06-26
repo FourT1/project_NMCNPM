@@ -8,3 +8,8 @@ C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\Qua
 C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csproj.CoreCompileInputs.cache
 C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.exe
 C:\Users\HPs\Downloads\Nhập Môn CÔng Nghệ Phần Mềm\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.pdb
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csprojAssemblyReference.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.Form1.resources
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.csproj.GenerateResource.cache
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.exe
+C:\Users\HPs\Documents\GitHub\project_NMCNPM\yêu cầu 7\QuanLyThuHocPhi\QuanLyThuHocPhi\obj\Debug\QuanLyThuHocPhi.pdb
