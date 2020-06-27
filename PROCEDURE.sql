@@ -1,5 +1,5 @@
 
---cac PROCEDURE cua yc1:
+--cac PROCEDURE cua form QuanLySV:
 CREATE PROCEDURE	SelectTenKhoa
 AS
 	select 
@@ -35,19 +35,21 @@ DROP PROCEDURE SelectTenDoiTuong
 
 
 
-CREATE PROCEDURE	SelectDiaPhuong
-AS
+CREATE PROCEDURE	SelectDiaPhuongUT
+AS Begin
 	select 
-		MaDiaPhuong
-	where VungXauVungXa = 1
+		MaDiaPhuong 
 	from DiaPhuong
-GO;
+	where VungXauVungXa = 1
+END
 
-exec SelectDiaPhuong
-DROP PROCEDURE SelectTenDiaPhuong
+exec SelectDiaPhuongUT
+DROP PROCEDURE SelectDiaPhuongUT
 
 
---cac PROCEDURE cua yc3:
+--form DKHP
+
+--cac PROCEDURE cua form NhapCTHoc:
 CREATE PROCEDURE	SelectTenKhoa
 AS
 	select 
@@ -69,4 +71,32 @@ GO;
 exec SelectTenNganh
 DROP PROCEDURE SelectTenNganh
 
+
+
+--form DSMonHocMo
+CREATE PROCEDURE	SelectTenHKNH
+AS
+	select 
+		TenHKNH
+	from HocKyNH
+GO;
+
+exec SelectTenHKNH
+DROP PROCEDURE SelectTenHKNH
+
+
+
+CREATE PROCEDURE	SelectMonHocMo
+AS
+	TenHKNH
+	select 
+		MaHKNH
+	from HocKyNH where SelectTenHKNH.TenHKNH = TenHKNH
+	select 
+		*
+	from CT_CTHoc
+GO;
+
+exec SelectTenHKNH
+DROP PROCEDURE SelectTenHKNH
 

@@ -7,16 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace DKHP
 {
-    public partial class Form1 : Form
+    public partial class fDKHP : Form
     {
-        public Form1()
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6TDDS79;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        public fDKHP()
         {
             InitializeComponent();
-            textBox3.Text = DateTime.Now.Year.ToString();
+            tbNamHoc.Text = DateTime.Now.Year.ToString();
+            int month = DateTime.Now.Month;
+            if(month>=8 && month<=12)
+            {
+                tbHocKy.Text = 2.ToString();
+            }
+            else
+            {
+                tbHocKy.Text = 1.ToString();
+            }
+
         }
+
+
+        private void fDKHP_Load(object sender, EventArgs e)
+        {
+            var dap = new SqlDataAdapter("SELECT * FROM Khoa", conn);
+            var table = new DataTable();
+            dap.Fill(table);
+            dgvDSMHM.DataSource = table;
+        }
+
+
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -75,10 +98,15 @@ namespace DKHP
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tbHocKy_TextChanged(object sender, EventArgs e)
         {
 
         }
