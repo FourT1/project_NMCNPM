@@ -35,16 +35,16 @@ DROP PROCEDURE SelectTenDoiTuong
 
 
 
-CREATE PROCEDURE	SelectDiaPhuong
+CREATE PROCEDURE	SelectDiaPhuongUT
 AS
 	select 
 		MaDiaPhuong
-	where VungXauVungXa = 1
+	where VungXauVungXa == 1 
 	from DiaPhuong
 GO;
 
-exec SelectDiaPhuong
-DROP PROCEDURE SelectTenDiaPhuong
+exec SelectDiaPhuongUT
+DROP PROCEDURE SelectDiaPhuongUT
 
 
 --cac PROCEDURE cua yc3:
