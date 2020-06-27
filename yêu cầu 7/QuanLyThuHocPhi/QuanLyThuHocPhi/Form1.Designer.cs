@@ -29,23 +29,29 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btThoat = new System.Windows.Forms.Button();
-            this.btInPhieu = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtMSSV = new System.Windows.Forms.TextBox();
-            this.lbMSSV = new System.Windows.Forms.Label();
-            this.lbSTT = new System.Windows.Forms.Label();
-            this.STT = new System.Windows.Forms.DomainUpDown();
             this.cbNamHoc = new System.Windows.Forms.ComboBox();
             this.lbNamHoc = new System.Windows.Forms.Label();
             this.cbHocKy = new System.Windows.Forms.ComboBox();
             this.lbHocKy = new System.Windows.Forms.Label();
-            this.lbSoTienDangKy = new System.Windows.Forms.Label();
-            this.txtSoTienDangKy = new System.Windows.Forms.TextBox();
-            this.lbSoTienPhaiDong = new System.Windows.Forms.Label();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btInPhieu = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbSoTienPhaiDong = new System.Windows.Forms.Label();
+            this.txtSoTienDangKy = new System.Windows.Forms.TextBox();
+            this.lbSoTienDangKy = new System.Windows.Forms.Label();
+            this.txtMSSV = new System.Windows.Forms.TextBox();
+            this.lbMSSV = new System.Windows.Forms.Label();
+            this.lbSTT = new System.Windows.Forms.Label();
+            this.STT = new System.Windows.Forms.DomainUpDown();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TienDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoTienPhaiDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoTienConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,6 +65,55 @@
             this.panel1.Size = new System.Drawing.Size(1254, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cbNamHoc
+            // 
+            this.cbNamHoc.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNamHoc.FormattingEnabled = true;
+            this.cbNamHoc.Items.AddRange(new object[] {
+            "2020"});
+            this.cbNamHoc.Location = new System.Drawing.Point(584, 9);
+            this.cbNamHoc.Name = "cbNamHoc";
+            this.cbNamHoc.Size = new System.Drawing.Size(229, 36);
+            this.cbNamHoc.TabIndex = 5;
+            this.cbNamHoc.Text = "Chọn năm học";
+            // 
+            // lbNamHoc
+            // 
+            this.lbNamHoc.AutoSize = true;
+            this.lbNamHoc.BackColor = System.Drawing.Color.Silver;
+            this.lbNamHoc.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNamHoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbNamHoc.Location = new System.Drawing.Point(425, 9);
+            this.lbNamHoc.Name = "lbNamHoc";
+            this.lbNamHoc.Size = new System.Drawing.Size(153, 33);
+            this.lbNamHoc.TabIndex = 4;
+            this.lbNamHoc.Text = "Năm học :";
+            // 
+            // cbHocKy
+            // 
+            this.cbHocKy.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHocKy.FormattingEnabled = true;
+            this.cbHocKy.Items.AddRange(new object[] {
+            "Học kỳ I",
+            "Học Kỳ II"});
+            this.cbHocKy.Location = new System.Drawing.Point(140, 9);
+            this.cbHocKy.Name = "cbHocKy";
+            this.cbHocKy.Size = new System.Drawing.Size(229, 36);
+            this.cbHocKy.TabIndex = 3;
+            this.cbHocKy.Text = "Chọn học kỳ";
+            // 
+            // lbHocKy
+            // 
+            this.lbHocKy.AutoSize = true;
+            this.lbHocKy.BackColor = System.Drawing.Color.Silver;
+            this.lbHocKy.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHocKy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbHocKy.Location = new System.Drawing.Point(16, 9);
+            this.lbHocKy.Name = "lbHocKy";
+            this.lbHocKy.Size = new System.Drawing.Size(118, 33);
+            this.lbHocKy.TabIndex = 2;
+            this.lbHocKy.Text = "Học kỳ:";
             // 
             // btThoat
             // 
@@ -95,9 +150,51 @@
             this.panel2.Controls.Add(this.STT);
             this.panel2.Location = new System.Drawing.Point(12, 68);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1254, 191);
+            this.panel2.Size = new System.Drawing.Size(1254, 73);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(1013, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Số tiền còn lại";
+            // 
+            // lbSoTienPhaiDong
+            // 
+            this.lbSoTienPhaiDong.AutoSize = true;
+            this.lbSoTienPhaiDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoTienPhaiDong.ForeColor = System.Drawing.Color.Black;
+            this.lbSoTienPhaiDong.Location = new System.Drawing.Point(710, 4);
+            this.lbSoTienPhaiDong.Name = "lbSoTienPhaiDong";
+            this.lbSoTienPhaiDong.Size = new System.Drawing.Size(164, 25);
+            this.lbSoTienPhaiDong.TabIndex = 7;
+            this.lbSoTienPhaiDong.Text = "Số tiền phải đóng";
+            // 
+            // txtSoTienDangKy
+            // 
+            this.txtSoTienDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoTienDangKy.Location = new System.Drawing.Point(399, 32);
+            this.txtSoTienDangKy.Name = "txtSoTienDangKy";
+            this.txtSoTienDangKy.Size = new System.Drawing.Size(229, 30);
+            this.txtSoTienDangKy.TabIndex = 6;
+            // 
+            // lbSoTienDangKy
+            // 
+            this.lbSoTienDangKy.AutoSize = true;
+            this.lbSoTienDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoTienDangKy.ForeColor = System.Drawing.Color.Black;
+            this.lbSoTienDangKy.Location = new System.Drawing.Point(441, 4);
+            this.lbSoTienDangKy.Name = "lbSoTienDangKy";
+            this.lbSoTienDangKy.Size = new System.Drawing.Size(147, 25);
+            this.lbSoTienDangKy.TabIndex = 5;
+            this.lbSoTienDangKy.Text = "Số tiền đăng ký";
+            this.lbSoTienDangKy.Click += new System.EventHandler(this.lbSoTienDangKy_Click);
             // 
             // txtMSSV
             // 
@@ -137,101 +234,56 @@
             this.STT.Size = new System.Drawing.Size(55, 30);
             this.STT.TabIndex = 0;
             // 
-            // cbNamHoc
+            // dataGridView2
             // 
-            this.cbNamHoc.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbNamHoc.FormattingEnabled = true;
-            this.cbNamHoc.Items.AddRange(new object[] {
-            "ssd"});
-            this.cbNamHoc.Location = new System.Drawing.Point(584, 9);
-            this.cbNamHoc.Name = "cbNamHoc";
-            this.cbNamHoc.Size = new System.Drawing.Size(229, 36);
-            this.cbNamHoc.TabIndex = 5;
-            this.cbNamHoc.Text = "Chọn năm học";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MSSV,
+            this.TienDangKy,
+            this.SoTienPhaiDong,
+            this.SoTienConLai});
+            this.dataGridView2.Location = new System.Drawing.Point(12, 147);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(1253, 188);
+            this.dataGridView2.TabIndex = 8;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // lbNamHoc
+            // MSSV
             // 
-            this.lbNamHoc.AutoSize = true;
-            this.lbNamHoc.BackColor = System.Drawing.Color.Silver;
-            this.lbNamHoc.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNamHoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNamHoc.Location = new System.Drawing.Point(425, 9);
-            this.lbNamHoc.Name = "lbNamHoc";
-            this.lbNamHoc.Size = new System.Drawing.Size(153, 33);
-            this.lbNamHoc.TabIndex = 4;
-            this.lbNamHoc.Text = "Năm học :";
+            this.MSSV.HeaderText = "Mã số sinh viên";
+            this.MSSV.MinimumWidth = 6;
+            this.MSSV.Name = "MSSV";
+            this.MSSV.Width = 300;
             // 
-            // cbHocKy
+            // TienDangKy
             // 
-            this.cbHocKy.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHocKy.FormattingEnabled = true;
-            this.cbHocKy.Items.AddRange(new object[] {
-            "Học kỳ I"});
-            this.cbHocKy.Location = new System.Drawing.Point(140, 9);
-            this.cbHocKy.Name = "cbHocKy";
-            this.cbHocKy.Size = new System.Drawing.Size(229, 36);
-            this.cbHocKy.TabIndex = 3;
-            this.cbHocKy.Text = "Chọn học kỳ";
+            this.TienDangKy.HeaderText = "Số tiền đăng ký";
+            this.TienDangKy.MinimumWidth = 6;
+            this.TienDangKy.Name = "TienDangKy";
+            this.TienDangKy.Width = 300;
             // 
-            // lbHocKy
+            // SoTienPhaiDong
             // 
-            this.lbHocKy.AutoSize = true;
-            this.lbHocKy.BackColor = System.Drawing.Color.Silver;
-            this.lbHocKy.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHocKy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbHocKy.Location = new System.Drawing.Point(16, 9);
-            this.lbHocKy.Name = "lbHocKy";
-            this.lbHocKy.Size = new System.Drawing.Size(118, 33);
-            this.lbHocKy.TabIndex = 2;
-            this.lbHocKy.Text = "Học kỳ:";
+            this.SoTienPhaiDong.HeaderText = "Số tiền phải đóng";
+            this.SoTienPhaiDong.MinimumWidth = 6;
+            this.SoTienPhaiDong.Name = "SoTienPhaiDong";
+            this.SoTienPhaiDong.Width = 300;
             // 
-            // lbSoTienDangKy
+            // SoTienConLai
             // 
-            this.lbSoTienDangKy.AutoSize = true;
-            this.lbSoTienDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoTienDangKy.ForeColor = System.Drawing.Color.Black;
-            this.lbSoTienDangKy.Location = new System.Drawing.Point(441, 4);
-            this.lbSoTienDangKy.Name = "lbSoTienDangKy";
-            this.lbSoTienDangKy.Size = new System.Drawing.Size(147, 25);
-            this.lbSoTienDangKy.TabIndex = 5;
-            this.lbSoTienDangKy.Text = "Số tiền đăng ký";
-            this.lbSoTienDangKy.Click += new System.EventHandler(this.lbSoTienDangKy_Click);
-            // 
-            // txtSoTienDangKy
-            // 
-            this.txtSoTienDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoTienDangKy.Location = new System.Drawing.Point(399, 32);
-            this.txtSoTienDangKy.Name = "txtSoTienDangKy";
-            this.txtSoTienDangKy.Size = new System.Drawing.Size(229, 30);
-            this.txtSoTienDangKy.TabIndex = 6;
-            // 
-            // lbSoTienPhaiDong
-            // 
-            this.lbSoTienPhaiDong.AutoSize = true;
-            this.lbSoTienPhaiDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoTienPhaiDong.ForeColor = System.Drawing.Color.Black;
-            this.lbSoTienPhaiDong.Location = new System.Drawing.Point(710, 4);
-            this.lbSoTienPhaiDong.Name = "lbSoTienPhaiDong";
-            this.lbSoTienPhaiDong.Size = new System.Drawing.Size(164, 25);
-            this.lbSoTienPhaiDong.TabIndex = 7;
-            this.lbSoTienPhaiDong.Text = "Số tiền phải đóng";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1013, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 25);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Số tiền còn lại";
+            this.SoTienConLai.HeaderText = "Số tiền còn lại";
+            this.SoTienConLai.MinimumWidth = 6;
+            this.SoTienConLai.Name = "SoTienConLai";
+            this.SoTienConLai.Width = 300;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 480);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btInPhieu);
@@ -243,6 +295,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,6 +318,11 @@
         private System.Windows.Forms.TextBox txtSoTienDangKy;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbSoTienPhaiDong;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TienDangKy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoTienPhaiDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoTienConLai;
     }
 }
 
