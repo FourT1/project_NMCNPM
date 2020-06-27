@@ -30,8 +30,6 @@
         {
             this.lbDKHP = new System.Windows.Forms.Label();
             this.fInfoDKHP = new System.Windows.Forms.GroupBox();
-            this.bttAccessDKHP = new System.Windows.Forms.Button();
-            this.bttDKHP = new System.Windows.Forms.Button();
             this.tbHocKy = new System.Windows.Forms.TextBox();
             this.tbNamHoc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,7 +50,6 @@
             this.bttDangKy = new System.Windows.Forms.Button();
             this.gbDSMHM = new System.Windows.Forms.GroupBox();
             this.dgvDSMHM = new System.Windows.Forms.DataGridView();
-            this.bttDKMH = new System.Windows.Forms.Button();
             this.fInfoDKHP.SuspendLayout();
             this.gbDSMDK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMDK)).BeginInit();
@@ -77,8 +74,6 @@
             // fInfoDKHP
             // 
             this.fInfoDKHP.BackColor = System.Drawing.SystemColors.Control;
-            this.fInfoDKHP.Controls.Add(this.bttAccessDKHP);
-            this.fInfoDKHP.Controls.Add(this.bttDKHP);
             this.fInfoDKHP.Controls.Add(this.tbHocKy);
             this.fInfoDKHP.Controls.Add(this.tbNamHoc);
             this.fInfoDKHP.Controls.Add(this.label6);
@@ -92,31 +87,11 @@
             this.fInfoDKHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fInfoDKHP.Location = new System.Drawing.Point(12, 39);
             this.fInfoDKHP.Name = "fInfoDKHP";
-            this.fInfoDKHP.Size = new System.Drawing.Size(462, 177);
+            this.fInfoDKHP.Size = new System.Drawing.Size(462, 134);
             this.fInfoDKHP.TabIndex = 3;
             this.fInfoDKHP.TabStop = false;
             this.fInfoDKHP.Text = "Thông tin phiếu ĐKHP";
             this.fInfoDKHP.Enter += new System.EventHandler(this.fInfoDKHP_Enter);
-            // 
-            // bttAccessDKHP
-            // 
-            this.bttAccessDKHP.Location = new System.Drawing.Point(381, 127);
-            this.bttAccessDKHP.Name = "bttAccessDKHP";
-            this.bttAccessDKHP.Size = new System.Drawing.Size(75, 44);
-            this.bttAccessDKHP.TabIndex = 13;
-            this.bttAccessDKHP.Text = "Truy cập";
-            this.bttAccessDKHP.UseVisualStyleBackColor = true;
-            this.bttAccessDKHP.Click += new System.EventHandler(this.bttAccessDKHP_Click);
-            // 
-            // bttDKHP
-            // 
-            this.bttDKHP.Location = new System.Drawing.Point(282, 127);
-            this.bttDKHP.Name = "bttDKHP";
-            this.bttDKHP.Size = new System.Drawing.Size(75, 44);
-            this.bttDKHP.TabIndex = 12;
-            this.bttDKHP.Text = "Đăng ký";
-            this.bttDKHP.UseVisualStyleBackColor = true;
-            this.bttDKHP.Click += new System.EventHandler(this.bttDKHP_Click);
             // 
             // tbHocKy
             // 
@@ -219,9 +194,9 @@
             // 
             this.gbDSMDK.Controls.Add(this.dgvDSMDK);
             this.gbDSMDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDSMDK.Location = new System.Drawing.Point(12, 234);
+            this.gbDSMDK.Location = new System.Drawing.Point(12, 179);
             this.gbDSMDK.Name = "gbDSMDK";
-            this.gbDSMDK.Size = new System.Drawing.Size(462, 263);
+            this.gbDSMDK.Size = new System.Drawing.Size(462, 318);
             this.gbDSMDK.TabIndex = 4;
             this.gbDSMDK.TabStop = false;
             this.gbDSMDK.Text = "Danh sách môn học đã đăng ký";
@@ -298,7 +273,6 @@
             // 
             // gbDSMHM
             // 
-            this.gbDSMHM.Controls.Add(this.bttDKMH);
             this.gbDSMHM.Controls.Add(this.dgvDSMHM);
             this.gbDSMHM.Location = new System.Drawing.Point(480, 39);
             this.gbDSMHM.Name = "gbDSMHM";
@@ -316,22 +290,11 @@
             this.dgvDSMHM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMHM.Location = new System.Drawing.Point(6, 19);
             this.dgvDSMHM.Name = "dgvDSMHM";
-            this.dgvDSMHM.ReadOnly = true;
             this.dgvDSMHM.RowHeadersVisible = false;
             this.dgvDSMHM.RowHeadersWidth = 62;
-            this.dgvDSMHM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSMHM.Size = new System.Drawing.Size(361, 439);
+            this.dgvDSMHM.Size = new System.Drawing.Size(361, 492);
             this.dgvDSMHM.TabIndex = 0;
-            this.dgvDSMHM.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMHM_CellDoubleClick);
-            // 
-            // bttDKMH
-            // 
-            this.bttDKMH.Location = new System.Drawing.Point(6, 464);
-            this.bttDKMH.Name = "bttDKMH";
-            this.bttDKMH.Size = new System.Drawing.Size(85, 53);
-            this.bttDKMH.TabIndex = 5;
-            this.bttDKMH.Text = "Đăng ký ";
-            this.bttDKMH.UseVisualStyleBackColor = true;
+            this.dgvDSMHM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // fDKHP
             // 
@@ -345,7 +308,6 @@
             this.Controls.Add(this.lbDKHP);
             this.Name = "fDKHP";
             this.Text = "Đăng ký học phần";
-            this.Load += new System.EventHandler(this.fDKHP_Load);
             this.fInfoDKHP.ResumeLayout(false);
             this.fInfoDKHP.PerformLayout();
             this.gbDSMDK.ResumeLayout(false);
@@ -382,9 +344,6 @@
         private System.Windows.Forms.Button bttThemMonHoc;
         private System.Windows.Forms.Button bttTruyCap;
         private System.Windows.Forms.TextBox tbHocKy;
-        private System.Windows.Forms.Button bttAccessDKHP;
-        private System.Windows.Forms.Button bttDKHP;
-        private System.Windows.Forms.Button bttDKMH;
     }
 }
 

@@ -30,21 +30,14 @@ namespace DKHP
         }
 
 
-
-
-            private void fDKHP_Load(object sender, EventArgs e)
+        private void fDKHP_Load(object sender, EventArgs e)
         {
-            var cmd = new SqlCommand("dsMonHocMo", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@HocKy", SqlDbType.TinyInt).Value = Convert.ToInt32(tbHocKy.Text);
-            cmd.Parameters.Add("@NamHoc", SqlDbType.VarChar).Value = tbNamHoc.Text;
-            var dap = new SqlDataAdapter(cmd);
+            var dap = new SqlDataAdapter("SELECT * FROM Khoa", conn);
             var table = new DataTable();
             dap.Fill(table);
             dgvDSMHM.DataSource = table;
         }
 
-     
 
         
 
@@ -116,47 +109,6 @@ namespace DKHP
         private void tbHocKy_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        Boolean addDKHP = false;
-        private void bttDKHP_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            var cmd = new SqlCommand("create_DKHP", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@sophieu", SqlDbType.VarChar).Value = tbSoPhieu.Text;
-            cmd.Parameters.Add("@masv", SqlDbType.VarChar).Value = tbMSSV.Text;
-            cmd.Parameters.Add("@ngaylap", SqlDbType.SmallDateTime).Value = dtpNgayLap.Value;
-            cmd.Parameters.Add("@hocky", SqlDbType.TinyInt).Value = Convert.ToInt32(tbHocKy.Text);
-            cmd.Parameters.Add("@namhoc", SqlDbType.VarChar).Value = tbNamHoc.Text;
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Đăng ký thành công", "Thông báo");
-            
-        }
-
-        private void bttAccessDKHP_Click(object sender, EventArgs e)
-        {
-            var cmd = new SqlCommand("access_DKHP", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@sophieu", SqlDbType.VarChar).Value = tbSoPhieu.Text;
-            var dap = new SqlDataAdapter(cmd);
-            var table = new DataTable();
-            dap.Fill(table);
-            dgvDSMDK.DataSource = table;
-        }
-
-        private void dgvDSMHM_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var mamonhoc = this.dgvDSMHM.CurrentRow.Cells[0].Value.ToString();
-            conn.Open();
-            var cmd = new SqlCommand("dangky_MH", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@sophieu", SqlDbType.VarChar).Value = tbSoPhieu.Text;
-            cmd.Parameters.Add("@mamh", SqlDbType.VarChar).Value = mamonhoc;
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Đăng ký môn học thành công, đóng để đăng ký tiếp tục", "Thông báo");
         }
     }
 }
