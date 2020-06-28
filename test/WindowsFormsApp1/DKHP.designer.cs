@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbDKHP = new System.Windows.Forms.Label();
             this.fInfoDKHP = new System.Windows.Forms.GroupBox();
-            this.bttAccessDKHP = new System.Windows.Forms.Button();
             this.bttDKHP = new System.Windows.Forms.Button();
             this.tbHocKy = new System.Windows.Forms.TextBox();
             this.tbNamHoc = new System.Windows.Forms.TextBox();
@@ -42,24 +44,25 @@
             this.tbMSSV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.gbDSMDK = new System.Windows.Forms.GroupBox();
-            this.dgvDSMDK = new System.Windows.Forms.DataGridView();
+            this.bttAccessDKHP = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttXoaMonHoc = new System.Windows.Forms.Button();
             this.gbDSMHM = new System.Windows.Forms.GroupBox();
             this.dgvDSMHM = new System.Windows.Forms.DataGridView();
             this.gbAccessDKHP = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbSoPhieuAccess = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tbMSSVAccess = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbSoPhieuAccess = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbDSMDK = new System.Windows.Forms.GroupBox();
+            this.dgvDSMDK = new System.Windows.Forms.DataGridView();
             this.fInfoDKHP.SuspendLayout();
-            this.gbDSMDK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMDK)).BeginInit();
             this.panel1.SuspendLayout();
             this.gbDSMHM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMHM)).BeginInit();
             this.gbAccessDKHP.SuspendLayout();
+            this.gbDSMDK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMDK)).BeginInit();
             this.SuspendLayout();
             // 
             // lbDKHP
@@ -97,16 +100,6 @@
             this.fInfoDKHP.TabStop = false;
             this.fInfoDKHP.Text = "Thông tin phiếu ĐKHP";
             this.fInfoDKHP.Enter += new System.EventHandler(this.fInfoDKHP_Enter);
-            // 
-            // bttAccessDKHP
-            // 
-            this.bttAccessDKHP.Location = new System.Drawing.Point(333, 51);
-            this.bttAccessDKHP.Name = "bttAccessDKHP";
-            this.bttAccessDKHP.Size = new System.Drawing.Size(96, 21);
-            this.bttAccessDKHP.TabIndex = 12;
-            this.bttAccessDKHP.Text = "Truy cập";
-            this.bttAccessDKHP.UseVisualStyleBackColor = true;
-            this.bttAccessDKHP.Click += new System.EventHandler(this.bttAccessDKHP_Click);
             // 
             // bttDKHP
             // 
@@ -215,34 +208,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Số phiếu: ";
             // 
-            // gbDSMDK
+            // bttAccessDKHP
             // 
-            this.gbDSMDK.Controls.Add(this.dgvDSMDK);
-            this.gbDSMDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDSMDK.Location = new System.Drawing.Point(12, 270);
-            this.gbDSMDK.Name = "gbDSMDK";
-            this.gbDSMDK.Size = new System.Drawing.Size(462, 251);
-            this.gbDSMDK.TabIndex = 4;
-            this.gbDSMDK.TabStop = false;
-            this.gbDSMDK.Text = "Danh sách môn học đã đăng ký";
-            // 
-            // dgvDSMDK
-            // 
-            this.dgvDSMDK.AllowUserToAddRows = false;
-            this.dgvDSMDK.AllowUserToDeleteRows = false;
-            this.dgvDSMDK.AllowUserToOrderColumns = true;
-            this.dgvDSMDK.AllowUserToResizeColumns = false;
-            this.dgvDSMDK.AllowUserToResizeRows = false;
-            this.dgvDSMDK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSMDK.Location = new System.Drawing.Point(6, 19);
-            this.dgvDSMDK.Name = "dgvDSMDK";
-            this.dgvDSMDK.ReadOnly = true;
-            this.dgvDSMDK.RowHeadersVisible = false;
-            this.dgvDSMDK.RowHeadersWidth = 62;
-            this.dgvDSMDK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSMDK.Size = new System.Drawing.Size(450, 293);
-            this.dgvDSMDK.TabIndex = 0;
-            this.dgvDSMDK.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView2_CellContentClick);
+            this.bttAccessDKHP.Location = new System.Drawing.Point(333, 51);
+            this.bttAccessDKHP.Name = "bttAccessDKHP";
+            this.bttAccessDKHP.Size = new System.Drawing.Size(96, 21);
+            this.bttAccessDKHP.TabIndex = 12;
+            this.bttAccessDKHP.Text = "Truy cập";
+            this.bttAccessDKHP.UseVisualStyleBackColor = true;
+            this.bttAccessDKHP.Click += new System.EventHandler(this.bttAccessDKHP_Click);
             // 
             // panel1
             // 
@@ -305,22 +279,12 @@
             this.gbAccessDKHP.TabStop = false;
             this.gbAccessDKHP.Text = "Truy cập phiếu DKHP";
             // 
-            // label1
+            // tbMSSVAccess
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 18);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Số phiếu: ";
-            // 
-            // tbSoPhieuAccess
-            // 
-            this.tbSoPhieuAccess.Location = new System.Drawing.Point(101, 17);
-            this.tbSoPhieuAccess.Name = "tbSoPhieuAccess";
-            this.tbSoPhieuAccess.Size = new System.Drawing.Size(121, 20);
-            this.tbSoPhieuAccess.TabIndex = 14;
+            this.tbMSSVAccess.Location = new System.Drawing.Point(334, 16);
+            this.tbMSSVAccess.Name = "tbMSSVAccess";
+            this.tbMSSVAccess.Size = new System.Drawing.Size(95, 20);
+            this.tbMSSVAccess.TabIndex = 12;
             // 
             // label7
             // 
@@ -332,12 +296,76 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "MSSV:";
             // 
-            // tbMSSVAccess
+            // tbSoPhieuAccess
             // 
-            this.tbMSSVAccess.Location = new System.Drawing.Point(334, 16);
-            this.tbMSSVAccess.Name = "tbMSSVAccess";
-            this.tbMSSVAccess.Size = new System.Drawing.Size(95, 20);
-            this.tbMSSVAccess.TabIndex = 12;
+            this.tbSoPhieuAccess.Location = new System.Drawing.Point(101, 17);
+            this.tbSoPhieuAccess.Name = "tbSoPhieuAccess";
+            this.tbSoPhieuAccess.Size = new System.Drawing.Size(121, 20);
+            this.tbSoPhieuAccess.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 18);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Số phiếu: ";
+            // 
+            // gbDSMDK
+            // 
+            this.gbDSMDK.Controls.Add(this.dgvDSMDK);
+            this.gbDSMDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDSMDK.Location = new System.Drawing.Point(12, 270);
+            this.gbDSMDK.Name = "gbDSMDK";
+            this.gbDSMDK.Size = new System.Drawing.Size(462, 251);
+            this.gbDSMDK.TabIndex = 4;
+            this.gbDSMDK.TabStop = false;
+            this.gbDSMDK.Text = "Danh sách môn học đã đăng ký";
+            // 
+            // dgvDSMDK
+            // 
+            this.dgvDSMDK.AllowUserToAddRows = false;
+            this.dgvDSMDK.AllowUserToDeleteRows = false;
+            this.dgvDSMDK.AllowUserToOrderColumns = true;
+            this.dgvDSMDK.AllowUserToResizeColumns = false;
+            this.dgvDSMDK.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDSMDK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDSMDK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDSMDK.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDSMDK.Location = new System.Drawing.Point(6, 19);
+            this.dgvDSMDK.MultiSelect = false;
+            this.dgvDSMDK.Name = "dgvDSMDK";
+            this.dgvDSMDK.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDSMDK.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDSMDK.RowHeadersVisible = false;
+            this.dgvDSMDK.RowHeadersWidth = 62;
+            this.dgvDSMDK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDSMDK.Size = new System.Drawing.Size(450, 293);
+            this.dgvDSMDK.TabIndex = 0;
+            this.dgvDSMDK.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView2_CellContentClick);
             // 
             // fDKHP
             // 
@@ -354,13 +382,13 @@
             this.Text = "Đăng ký học phần";
             this.fInfoDKHP.ResumeLayout(false);
             this.fInfoDKHP.PerformLayout();
-            this.gbDSMDK.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMDK)).EndInit();
             this.panel1.ResumeLayout(false);
             this.gbDSMHM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMHM)).EndInit();
             this.gbAccessDKHP.ResumeLayout(false);
             this.gbAccessDKHP.PerformLayout();
+            this.gbDSMDK.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMDK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,12 +406,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox gbDSMDK;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox gbDSMHM;
         private System.Windows.Forms.TextBox tbNamHoc;
         private System.Windows.Forms.DataGridView dgvDSMHM;
-        private System.Windows.Forms.DataGridView dgvDSMDK;
         private System.Windows.Forms.Button bttXoaMonHoc;
         private System.Windows.Forms.TextBox tbHocKy;
         private System.Windows.Forms.Button bttAccessDKHP;
@@ -393,6 +419,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbMSSVAccess;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox gbDSMDK;
+        private System.Windows.Forms.DataGridView dgvDSMDK;
     }
 }
 
