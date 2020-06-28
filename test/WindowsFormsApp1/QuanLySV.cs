@@ -23,16 +23,16 @@ namespace WindowsFormsApp1
         DataTable table = new DataTable();
         SqlDataAdapter adapter = new SqlDataAdapter();
         string str = (@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
-        // hàm load data 
-        void loaddata()
+        //// hàm load data 
+       void loaddata()
         {
-            command = conn.CreateCommand();
-            command.CommandText = "select * from SinhVien";
+           command = conn.CreateCommand();
+           command.CommandText = "select * from SinhVien";
             adapter.SelectCommand = command;
             table.Clear();
-            adapter.Fill(table);
+              adapter.Fill(table);
             dgvSV.DataSource = table;
-        }
+       }
         public bool checkInput()
         {
             if (string.IsNullOrEmpty(tbMSSV.Text))
@@ -66,7 +66,18 @@ namespace WindowsFormsApp1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //Khi bắt sự kiện xóa thì thêm dòng này 
+            tbMSSV.ReadOnly = true;
+            int i;
+            i = dgvSV.CurrentRow.Index;
+            tbMSSV.Text = dgvSV.Rows[i].Cells[0].Value.ToString();
+            tbTen.Text = dgvSV.Rows[i].Cells[1].Value.ToString();
+            dtpNgaySinh.Text = dgvSV.Rows[i].Cells[2].Value.ToString();
+            cbbbGioiTinh.Text = dgvSV.Rows[i].Cells[3].Value.ToString();
+            cbbMaHuyen.Text = dgvSV.Rows[i].Cells[4].Value.ToString();
+            cbbMaTinh.Text = dgvSV.Rows[i].Cells[5].Value.ToString();
+            cbbNganh.Text = dgvSV.Rows[i].Cells[6].Value.ToString();
+            cbbDoiTuong.Text = dgvSV.Rows[i].Cells[7].Value.ToString();
         }
 
         private void cbbKhoa_SelectedIndexChanged(object sender, EventArgs e)
@@ -80,6 +91,10 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             //btnDel
+            command = conn.CreateCommand();
+            command.CommandText = ( " delete from SinhVien where MaSV = '"+tbMSSV+"' " );
+            command.ExecuteNonQuery();
+            loaddata();
 
         }
 
@@ -93,10 +108,16 @@ namespace WindowsFormsApp1
             command = conn.CreateCommand();
             command.CommandText = "Insert into SINHVIEN values('"+tbMSSV.Text+"', '"+tbTen.Text+" , '"+dtpNgaySinh.Text+"', '"+cbbbGioiTinh.Text+"', '"+ cbbMaHuyen.Text+"' , '"+cbbMaTinh.Text+"' ,'" + cbbNganh.Text+"' ,'"+cbbDoiTuong.Text+"' )";
             command.ExecuteNonQuery();
+            loaddata();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            //chỉnh nút sửa 
+            command = conn.CreateCommand();
+            command.CommandText = "update MaSV set '"+tbTen.Text+"', NgaySinh = '"+ dtpNgaySinh.Text+"' , GioiTinh='"+cbbbGioiTinh.Text+"', MaHuyen='"+cbbMaHuyen.Text+"', MaTinh = '"+cbbMaTinh.Text+", MaNganh='"+cbbNganh.Text+"', '"+cbbDoiTuong.Text+"'";
+            command.ExecuteNonQuery();
+            loaddata();
 
         }
 
