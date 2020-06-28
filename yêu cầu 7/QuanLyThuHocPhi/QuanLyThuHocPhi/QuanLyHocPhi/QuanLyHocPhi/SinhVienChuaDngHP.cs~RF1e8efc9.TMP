@@ -29,19 +29,16 @@ namespace QuanLyHocPhi
             cbHocKy.DisplayMember = "HocKy";
             cbHocKy.ValueMember = "MaHK";
             cbHocKy.DataSource = table;
-            
+            var dap1 = new SqlDataAdapter("SELECT * FROM NamHoc ", connection);
+            var table1 = new DataTable();
+            dap1.Fill(table1);
+            cbNamHoc.DisplayMember = "TenNH";
+            cbNamHoc.ValueMember = "MaNH";
+            cbNamHoc.DataSource = table1;
 
 
         }
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            //int MaNH = Convert.ToInt32(cbNamHoc.SelectedValue);
-            //var dap1 = new SqlDataAdapter("SELECT MaCT,MaSV,SoTienDK,SoTienDaDong,SoTienConLai FROM CT_DS_CHUADONGHP WHERE MaNH = " + MaNH + " ", connection);
-            //var table1 = new DataTable();
-            //dap1.Fill(table1);
-            //dtgvChuaDongHP.DataSource = table1;
 
-        }
         private void label1_Click(object sender, EventArgs e)
         {
                 
@@ -50,11 +47,10 @@ namespace QuanLyHocPhi
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int MaHK = Convert.ToInt32(cbHocKy.SelectedValue);
-            var dap = new SqlDataAdapter("SELECT MaNH AS NĂM_HỌC ,MaSV ,SoTienDK AS SỐ_TIỀN_ĐĂNG_KÝ ,SoTienDaDong AS SỐ_TIỀN_ĐÃ_ĐÓNG,SoTienConLai AS SỐ_TIỀN_CÒN_LẠI FROM CT_DS_CHUADONGHP WHERE MaHK = "+MaHK+" ", connection);
+            var dap = new SqlDataAdapter("SELECT MaCT,MaSV,SoTienDK,SoTienDaDong,SoTienConLai FROM CT_DS_CHUADONGHP WHERE MaHK = "+MaHK+" ", connection);
             var table = new DataTable();
             dap.Fill(table);
             dtgvChuaDongHP.DataSource = table;
-           
             
         }
         private void comboBox1_SelectedValueChanged1(object sender, EventArgs e)
@@ -71,7 +67,14 @@ namespace QuanLyHocPhi
 
         }
 
-       
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            //int MaNH = Convert.ToInt32(cbNamHoc.SelectedValue);
+            //var dap1 = new SqlDataAdapter("SELECT MaCT,MaSV,SoTienDK,SoTienDaDong,SoTienConLai FROM CT_DS_CHUADONGHP WHERE MaNH = " + MaNH + " ", connection);
+            //var table1 = new DataTable();
+            //dap1.Fill(table1);
+            //dtgvChuaDongHP.DataSource = table1;
+        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
