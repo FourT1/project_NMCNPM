@@ -17,9 +17,22 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        SqlCommand command;
         SqlConnection conn = new SqlConnection(@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
-        Boolean addSV = false;
-
+        // Boolean addSV = false;
+        DataTable table = new DataTable();
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        string str = (@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        // hàm load data 
+        void loaddata()
+        {
+            command = conn.CreateCommand();
+            command.CommandText = "select * from SinhVien";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dgvSV.DataSource = table;
+        }
         public bool checkInput()
         {
             if (string.IsNullOrEmpty(tbMSSV.Text))
@@ -43,6 +56,12 @@ namespace WindowsFormsApp1
             cbbKhoa.DisplayMember = "TenKhoa";
             cbbKhoa.ValueMember = "MaKhoa";
             cbbKhoa.DataSource = table;
+            /*
+             nếu code trên không chạy đc->> dùng code dưới đây
+                 conn = new SqlConnection(str);
+                 conn.Open();
+                 loaddata();
+             */
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -57,9 +76,10 @@ namespace WindowsFormsApp1
             var table = new DataTable();
             dap.Fill(table);
         }
-
+        ///
         private void button2_Click(object sender, EventArgs e)
         {
+            //btnDel
 
         }
 
@@ -70,9 +90,44 @@ namespace WindowsFormsApp1
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (checkInput())
-            {
-            }
+            command = conn.CreateCommand();
+            command.CommandText = "Insert into SINHVIEN values('"+tbMSSV.Text+"', '"+tbTen.Text+" , '"+dtpNgaySinh.Text+"', '"+cbbbGioiTinh.Text+"', '"+ cbbMaHuyen.Text+"' , '"+cbbMaTinh.Text+"' ,'" + cbbNganh.Text+"' ,'"+cbbDoiTuong.Text+"' )";
+            command.ExecuteNonQuery();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbbbGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
