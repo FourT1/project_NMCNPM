@@ -54,8 +54,11 @@ namespace QuanLyHocPhi
             var table = new DataTable();
             dap.Fill(table);
             dtgvChuaDongHP.DataSource = table;
-           
-            
+            dtgvChuaDongHP.AllowUserToAddRows = false;
+            dtgvChuaDongHP.EditMode = DataGridViewEditMode.EditProgrammatically;
+            //dtgvChuaDongHP.Sort(dtgvChuaDongHP.Columns("MaNH"), System.ComponentModel.ListSortDirection.Ascending);
+
+
         }
         private void comboBox1_SelectedValueChanged1(object sender, EventArgs e)
         {
@@ -68,7 +71,8 @@ namespace QuanLyHocPhi
 
         private void dtgvChuaDongHP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
+            //dtgvChuaDongHP.Sort(dtgvChuaDongHP.Columns("MaNH"), System.ComponentModel.ListSortDirection.Ascending);
         }
 
        
