@@ -29,8 +29,6 @@ namespace DKHP
 
         }
 
-        public delegate void UpdateDelegate(object sender, UpdateDelegate args);
-        public event UpdateDelegate UpdateEventHandler;
 
             private void fDKHP_Load(object sender, EventArgs e)
         {
@@ -46,7 +44,16 @@ namespace DKHP
             dgvDSMHM.DataSource = table;
         }
 
-        
+        public bool checkInput()
+        {
+            if (string.IsNullOrEmpty(tbMSSV.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập MSSV", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+            return true;
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -144,6 +151,11 @@ namespace DKHP
 
         private void bttAccessDKHP_Click(object sender, EventArgs e)
         {
+            if(tbSoPhieuAccess.Text == "" || tbMSSVAccess.Text == "")
+            {
+                MessageBox.Show("Hãy điền đầy đủ thông tin.");
+            }
+            
             var cmd = new SqlCommand("access_DKHP", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@sophieu", SqlDbType.VarChar).Value = tbSoPhieuAccess.Text;
@@ -151,7 +163,15 @@ namespace DKHP
             var dap = new SqlDataAdapter(cmd);
             var table = new DataTable();
             dap.Fill(table);
-            dgvDSMDK.DataSource = table;
+            if (table.Rows.Count != 0)
+            {
+                dgvDSMDK.DataSource = table;
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại phiếu ĐKHP, vui lòng kiểm tra lại");
+            }
+            
 
             var cmd1 = new SqlCommand("dsMonHocMo", conn);
             cmd1.CommandType = CommandType.StoredProcedure;
@@ -161,7 +181,16 @@ namespace DKHP
             var datafill = new SqlDataAdapter(cmd1);
             var tableDK = new DataTable();
             datafill.Fill(tableDK);
-            dgvDSMHM.DataSource = tableDK;
+            if (tableDK.Rows.Count != 0)
+            {
+                dgvDSMHM.DataSource = tableDK;
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại phiếu ĐKHP, vui lòng kiểm tra lại");
+            }
+
+            
         }
 
         void loadDSDK()

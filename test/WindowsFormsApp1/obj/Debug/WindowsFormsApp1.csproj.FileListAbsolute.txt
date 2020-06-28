@@ -29,7 +29,6 @@ C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\Wi
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
-C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.Form1.resources
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DSMonHocMo.DSMonHocMo.resources
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\ChuaDongHP.Form1.resources
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\NhapCThoc.fNhapCTHoc.resources
@@ -43,4 +42,8 @@ C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\Wi
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+<<<<<<< HEAD
+C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
+=======
 D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
+>>>>>>> dbf78a7d1ff1e03116ebd7a0545268e5df19658d

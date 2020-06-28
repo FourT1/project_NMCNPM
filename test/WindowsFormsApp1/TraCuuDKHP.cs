@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TraCuu_DKHP
 {
-    public partial class Form1 : Form
+    public partial class fTraCuuDKHP : Form
     {
-        public Form1()
+        public fTraCuuDKHP()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace TraCuu_DKHP
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
