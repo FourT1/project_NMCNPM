@@ -19,10 +19,16 @@ namespace WindowsFormsApp1
         }
         SqlConnection conn = new SqlConnection(@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
         Boolean addSV = false;
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }   
+        public bool checkInput()
+        {
+            if (string.IsNullOrEmpty(tbMSSV.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập MSSV", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+            return true;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -60,6 +66,13 @@ namespace WindowsFormsApp1
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (checkInput())
+            {
+            }
         }
     }
 }
