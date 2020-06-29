@@ -30,11 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbHocKy = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgvChuaDongHP = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cbNamHoc = new System.Windows.Forms.ComboBox();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btInPhieu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChuaDongHP)).BeginInit();
@@ -42,14 +43,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.cbHocKy);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1307, 61);
+            this.panel1.Size = new System.Drawing.Size(593, 61);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cbHocKy
             // 
@@ -59,19 +59,9 @@
             "Học kỳ II"});
             this.cbHocKy.Location = new System.Drawing.Point(144, 21);
             this.cbHocKy.Name = "cbHocKy";
-            this.cbHocKy.Size = new System.Drawing.Size(199, 24);
+            this.cbHocKy.Size = new System.Drawing.Size(109, 24);
             this.cbHocKy.TabIndex = 1;
             this.cbHocKy.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(880, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Năm học:";
             // 
             // label1
             // 
@@ -89,34 +79,60 @@
             this.panel2.Controls.Add(this.dtgvChuaDongHP);
             this.panel2.Location = new System.Drawing.Point(12, 79);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1307, 234);
+            this.panel2.Size = new System.Drawing.Size(1307, 311);
             this.panel2.TabIndex = 1;
             // 
             // dtgvChuaDongHP
             // 
             this.dtgvChuaDongHP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvChuaDongHP.Location = new System.Drawing.Point(0, 3);
+            this.dtgvChuaDongHP.Location = new System.Drawing.Point(3, 3);
             this.dtgvChuaDongHP.Name = "dtgvChuaDongHP";
             this.dtgvChuaDongHP.RowHeadersWidth = 51;
             this.dtgvChuaDongHP.RowTemplate.Height = 24;
-            this.dtgvChuaDongHP.Size = new System.Drawing.Size(1307, 228);
+            this.dtgvChuaDongHP.Size = new System.Drawing.Size(1270, 328);
             this.dtgvChuaDongHP.TabIndex = 0;
+            this.dtgvChuaDongHP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvChuaDongHP_CellContentClick);
             // 
-            // label3
+            // cbNamHoc
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1020, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 24);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "2020";
+            this.cbNamHoc.FormattingEnabled = true;
+            this.cbNamHoc.Items.AddRange(new object[] {
+            "Học kỳ I",
+            "Học kỳ II"});
+            this.cbNamHoc.Location = new System.Drawing.Point(707, 35);
+            this.cbNamHoc.Name = "cbNamHoc";
+            this.cbNamHoc.Size = new System.Drawing.Size(109, 24);
+            this.cbNamHoc.TabIndex = 2;
+            this.cbNamHoc.SelectedIndexChanged += new System.EventHandler(this.cbNamHoc_SelectedIndexChanged);
+            // 
+            // btThoat
+            // 
+            this.btThoat.Location = new System.Drawing.Point(328, 416);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(201, 86);
+            this.btThoat.TabIndex = 3;
+            this.btThoat.Text = "Thoát";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
+            // btInPhieu
+            // 
+            this.btInPhieu.Location = new System.Drawing.Point(628, 427);
+            this.btInPhieu.Name = "btInPhieu";
+            this.btInPhieu.Size = new System.Drawing.Size(201, 65);
+            this.btInPhieu.TabIndex = 4;
+            this.btInPhieu.Text = "In phiếu";
+            this.btInPhieu.UseVisualStyleBackColor = true;
+            this.btInPhieu.Click += new System.EventHandler(this.btInPhieu_Click);
             // 
             // SinhVienChuaDngHP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1331, 507);
+            this.ClientSize = new System.Drawing.Size(1294, 680);
+            this.Controls.Add(this.btInPhieu);
+            this.Controls.Add(this.btThoat);
+            this.Controls.Add(this.cbNamHoc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "SinhVienChuaDngHP";
@@ -135,10 +151,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbHocKy;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dtgvChuaDongHP;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbNamHoc;
+        private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.Button btInPhieu;
     }
 }
 

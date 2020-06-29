@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
             listView1.Items.Clear();
             ketnoi.Open();
-            sql = @"Insert into MONHOC (MaMH, TenMH, LoaiMon,SoTiet,SoTC) VALUES (N'" + txtID.Text + @"',N'"+txtTen.Text+ @"', N'" +txtSoTiet.Text  +@"',N'" +txtLoaiMon +@"')";
+            sql = @"Insert into MONHOC (MaMH, TenMH, LoaiMon,SoTiet) VALUES (N'" + txtID.Text + @"',N'"+txtTen.Text+ @"', N'" +txtSoTiet.Text  +@"',N'" +cbbLoaiMon +@"')";
             thuchien = new SqlCommand(sql, ketnoi);
             thuchien.ExecuteNonQuery();
             ketnoi.Close();
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
         {
             listView1.Items.Clear();
             ketnoi.Open();
-            sql = @"UPDATE FROM  MONHOC SET MaMH= N '" + txtID.Text + @"', TenMH = N '" + txtSoTiet + @"', SoTiet = N '" + txtLoaiMon + @"'
+            sql = @"UPDATE FROM  MONHOC SET MaMH= N '" + txtID.Text + @"', TenMH = N '" + txtSoTiet + @"', SoTiet = N '" + cbbLoaiMon + @"'
             WHERE ( MaMH = N'"+txtID.Text + @"')";
             thuchien = new SqlCommand(sql, ketnoi);
             thuchien.ExecuteNonQuery();

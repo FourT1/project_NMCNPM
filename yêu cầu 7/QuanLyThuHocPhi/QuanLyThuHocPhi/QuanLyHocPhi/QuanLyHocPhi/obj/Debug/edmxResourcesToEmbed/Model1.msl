@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLVDKHPVTHPSVModelStoreContainer" CdmEntityContainer="QLVDKHPVTHPSVEntities">
+    <EntitySetMapping Name="CT_CTHOC">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.CT_CTHOC">
+        <MappingFragment StoreEntitySet="CT_CTHOC">
+          <ScalarProperty Name="MaCTH" ColumnName="MaCTH" />
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CT_DKHP">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.CT_DKHP">
+        <MappingFragment StoreEntitySet="CT_DKHP">
+          <ScalarProperty Name="MaCT_DKHP" ColumnName="MaCT_DKHP" />
+          <ScalarProperty Name="MaDKHP" ColumnName="MaDKHP" />
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CT_DS_CHUADONGHP">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.CT_DS_CHUADONGHP">
+        <MappingFragment StoreEntitySet="CT_DS_CHUADONGHP">
+          <ScalarProperty Name="MaCT" ColumnName="MaCT" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+          <ScalarProperty Name="MaNH" ColumnName="MaNH" />
+          <ScalarProperty Name="SoTienDK" ColumnName="SoTienDK" />
+          <ScalarProperty Name="SoTienDaDong" ColumnName="SoTienDaDong" />
+          <ScalarProperty Name="SoTienConLai" ColumnName="SoTienConLai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTHOC">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.CTHOC">
+        <MappingFragment StoreEntitySet="CTHOC">
+          <ScalarProperty Name="MaCTH" ColumnName="MaCTH" />
+          <ScalarProperty Name="MaNganh" ColumnName="MaNganh" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIAPHUONG">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.DIAPHUONG">
+        <MappingFragment StoreEntitySet="DIAPHUONG">
+          <ScalarProperty Name="MaHuyen" ColumnName="MaHuyen" />
+          <ScalarProperty Name="MaTinh" ColumnName="MaTinh" />
+          <ScalarProperty Name="TenHuyen" ColumnName="TenHuyen" />
+          <ScalarProperty Name="TenTinh" ColumnName="TenTinh" />
+          <ScalarProperty Name="VungSau" ColumnName="VungSau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DKHP">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.DKHP">
+        <MappingFragment StoreEntitySet="DKHP">
+          <ScalarProperty Name="MaDKHP" ColumnName="MaDKHP" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOITUONG">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.DOITUONG">
+        <MappingFragment StoreEntitySet="DOITUONG">
+          <ScalarProperty Name="MaDoiTuong" ColumnName="MaDoiTuong" />
+          <ScalarProperty Name="TenDoiTuong" ColumnName="TenDoiTuong" />
+          <ScalarProperty Name="TyLeGiam" ColumnName="TyLeGiam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DS_MONHOCMO">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.DS_MONHOCMO">
+        <MappingFragment StoreEntitySet="DS_MONHOCMO">
+          <ScalarProperty Name="MaDSMHM" ColumnName="MaDSMHM" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HocKy">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.HocKy">
+        <MappingFragment StoreEntitySet="HocKy">
+          <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+          <ScalarProperty Name="HocKy1" ColumnName="HocKy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHOA">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.KHOA">
+        <MappingFragment StoreEntitySet="KHOA">
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="TenKhoa" ColumnName="TenKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONHOC">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.MONHOC">
+        <MappingFragment StoreEntitySet="MONHOC">
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+          <ScalarProperty Name="TenMH" ColumnName="TenMH" />
+          <ScalarProperty Name="LoaiMon" ColumnName="LoaiMon" />
+          <ScalarProperty Name="SoTiet" ColumnName="SoTiet" />
+          <ScalarProperty Name="SoTC" ColumnName="SoTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NamHoc">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.NamHoc">
+        <MappingFragment StoreEntitySet="NamHoc">
+          <ScalarProperty Name="MaNH" ColumnName="MaNH" />
+          <ScalarProperty Name="TenNH" ColumnName="TenNH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGANH">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.NGANH">
+        <MappingFragment StoreEntitySet="NGANH">
+          <ScalarProperty Name="MaNganh" ColumnName="MaNganh" />
+          <ScalarProperty Name="TenNganh" ColumnName="TenNganh" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIEUTHU_HP">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.PHIEUTHU_HP">
+        <MappingFragment StoreEntitySet="PHIEUTHU_HP">
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="MaDKHP" ColumnName="MaDKHP" />
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+          <ScalarProperty Name="SoTienThu" ColumnName="SoTienThu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhVien">
+      <EntityTypeMapping TypeName="QLVDKHPVTHPSVModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="MaHuyen" ColumnName="MaHuyen" />
+          <ScalarProperty Name="MaTinh" ColumnName="MaTinh" />
+          <ScalarProperty Name="MaNganh" ColumnName="MaNganh" />
+          <ScalarProperty Name="MaDoiTuong" ColumnName="MaDoiTuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CT_MONHOCMO" TypeName="QLVDKHPVTHPSVModel.CT_MONHOCMO" StoreEntitySet="CT_MONHOCMO">
+      <EndProperty Name="CTHOC">
+        <ScalarProperty Name="MaCTH" ColumnName="MaCTH" />
+      </EndProperty>
+      <EndProperty Name="DS_MONHOCMO">
+        <ScalarProperty Name="MaDSMHM" ColumnName="MaDSMHM" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

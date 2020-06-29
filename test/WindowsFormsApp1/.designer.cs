@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvChuaDongHP = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTienDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,27 +43,27 @@
             this.btThoat = new System.Windows.Forms.Button();
             this.btInPhieu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvChuaDongHP)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvChuaDongHP
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvChuaDongHP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvChuaDongHP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
             this.MSSV,
             this.SoTienDangKy,
             this.SoTienPhaiDong,
             this.SoTienConLai});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1311, 156);
-            this.dataGridView1.TabIndex = 11;
+            this.dtgvChuaDongHP.Location = new System.Drawing.Point(0, 13);
+            this.dtgvChuaDongHP.Name = "dtgvChuaDongHP";
+            this.dtgvChuaDongHP.RowHeadersWidth = 51;
+            this.dtgvChuaDongHP.RowTemplate.Height = 24;
+            this.dtgvChuaDongHP.Size = new System.Drawing.Size(1311, 156);
+            this.dtgvChuaDongHP.TabIndex = 11;
             // 
             // STT
             // 
@@ -144,6 +144,7 @@
             this.cbHocKy.Size = new System.Drawing.Size(164, 32);
             this.cbHocKy.TabIndex = 13;
             this.cbHocKy.Text = "Chọn học kỳ";
+            this.cbHocKy.SelectedIndexChanged += new System.EventHandler(this.cbHocKy_SelectedIndexChanged);
             // 
             // lbHocKy
             // 
@@ -156,10 +157,11 @@
             this.lbHocKy.Size = new System.Drawing.Size(118, 33);
             this.lbHocKy.TabIndex = 12;
             this.lbHocKy.Text = "Học kỳ:";
+            this.lbHocKy.Click += new System.EventHandler(this.lbHocKy_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dtgvChuaDongHP);
             this.panel2.Location = new System.Drawing.Point(12, 68);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1314, 182);
@@ -175,6 +177,7 @@
             this.btThoat.TabIndex = 14;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btInPhieu
             // 
@@ -186,6 +189,7 @@
             this.btInPhieu.TabIndex = 15;
             this.btInPhieu.Text = "In Phiếu";
             this.btInPhieu.UseVisualStyleBackColor = true;
+            this.btInPhieu.Click += new System.EventHandler(this.btInPhieu_Click);
             // 
             // panel3
             // 
@@ -207,7 +211,8 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvChuaDongHP)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -218,7 +223,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvChuaDongHP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbNamHoc;

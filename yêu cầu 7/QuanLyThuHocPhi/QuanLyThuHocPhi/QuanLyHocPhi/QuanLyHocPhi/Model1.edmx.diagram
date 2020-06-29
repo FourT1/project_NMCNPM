@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="63268d7e2dca47af9cecde41f86d2e6a" Name="Diagram1">
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.CT_CTHOC" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.CT_DKHP" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.CT_DS_CHUADONGHP" Width="1.5" PointX="10.5" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.CTHOC" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.DIAPHUONG" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.DKHP" Width="1.5" PointX="7.5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.DOITUONG" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.DS_MONHOCMO" Width="1.5" PointX="7.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.HocKy" Width="1.5" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.KHOA" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.MONHOC" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.NamHoc" Width="1.5" PointX="8.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.NGANH" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.PHIEUTHU_HP" Width="1.5" PointX="9.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLVDKHPVTHPSVModel.SinhVien" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaCTH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaMH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_DKHP_MaMH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaHK_DS" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaNH_DS" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaSV_DS" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_Khoa_CTHoc" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_Nganh_CTHoc" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_DiaPhuong_SV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_MaSV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_PhieuThu_DKHP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_DoiTuong_SV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_Khoa_Nganh" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_Nganh_SV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.FK_PhieuThu_SV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLVDKHPVTHPSVModel.CT_MONHOCMO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

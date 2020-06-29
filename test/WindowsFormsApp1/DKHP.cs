@@ -123,19 +123,27 @@ namespace DKHP
 
         private void bttDKHP_Click(object sender, EventArgs e)
         {
-            //Kiểm tra MSSV có tồn tại
+            //Kiểm tra MSSV có tồn tại trong CT_DKHP
             var namhoc = Convert.ToInt32(tbHocKy.Text);
             var cmd1 = new SqlCommand("SELECT MaSV From DKHP WHERE MaSV ='"+tbMSSV.Text+"' AND HocKy="+namhoc+" AND NamHoc='"+tbNamHoc.Text+"' ", conn);
             var datafill = new SqlDataAdapter(cmd1);
             var table = new DataTable();
             datafill.Fill(table);
-            //
+            // Kiểm tra MSSV có tồn tại trong SINHVIEN
+            var cmd2 = new SqlCommand("SELECT MaSV From SINHVIEN WHERE MaSV ='" + tbMSSV.Text + "' " , conn);
+            var datafill1 = new SqlDataAdapter(cmd2);
+            var table1 = new DataTable();
+            datafill1.Fill(table1);
 
-            
             if (table.Rows.Count > 0)
             {
                     MessageBox.Show("MSSV đã tồn tại", "Thông báo");
                     table.Clear();
+            }
+            else if (table1.Rows.Count == 0)
+            {
+                MessageBox.Show("MSSV sai", "Thông báo");
+                table1.Clear();
             }
             else if (tbSoPhieu.Text == "" || tbMSSV.Text == "")
             {
@@ -155,6 +163,8 @@ namespace DKHP
                 conn.Close();
                 MessageBox.Show("Đăng ký thành công", "Thông báo");
             }
+
+
         }
 
         private void bttAccessDKHP_Click(object sender, EventArgs e)
