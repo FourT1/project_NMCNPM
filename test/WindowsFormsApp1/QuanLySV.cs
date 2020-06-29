@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
             //chỉnh nút sửa 
             conn.Open();
             command = conn.CreateCommand();
-            command.CommandText = "update MaSV set '"+tbTen.Text+"', NgaySinh = '"+ dtpNgaySinh.Text+"' , GioiTinh='"+cbbbGioiTinh.Text+"', MaHuyen='"+cbbMaHuyen.Text+"', MaTinh = '"+cbbMaTinh.Text+", MaNganh='"+cbbNganh.Text+"', '"+cbbDoiTuong.Text+"'";
+            command.CommandText = "update MaSV set '"+tbTen.Text+"', NgaySinh = '"+ dtpNgaySinh.Text+"', MaHuyen='"+cbbMaHuyen.Text+"', MaTinh = '"+cbbMaTinh.Text+ ", MaDoiTuong= '" + cbbMaDoiTuong.Text + "',MaNganh='" + cbbNganh.Text+"',  GioiTinh='" + cbbbGioiTinh.Text + "'";
             command.ExecuteNonQuery();
             conn.Close();
             loaddata();
