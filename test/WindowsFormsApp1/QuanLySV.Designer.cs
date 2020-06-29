@@ -83,7 +83,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1394, 85);
+            this.label1.Size = new System.Drawing.Size(1309, 85);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản lý sinh viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,7 +109,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 85);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1394, 293);
+            this.panel1.Size = new System.Drawing.Size(1309, 293);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -463,7 +463,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label11.Location = new System.Drawing.Point(0, 378);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1394, 349);
+            this.label11.Size = new System.Drawing.Size(1309, 349);
             this.label11.TabIndex = 5;
             this.label11.Text = "Danh sách sinh viên";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -484,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1394, 727);
+            this.ClientSize = new System.Drawing.Size(1309, 727);
             this.Controls.Add(this.dgvSV);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
