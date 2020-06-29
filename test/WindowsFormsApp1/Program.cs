@@ -16,7 +16,12 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new QuanLySV());
+            
+=======
             Application.Run(new NhapCThoc());
+>>>>>>> c8a98dfb559dbc34296e565520c01f27918362c7
         }
     }
 }
