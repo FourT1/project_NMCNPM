@@ -91,16 +91,17 @@
             this.panel2.Controls.Add(this.lbMaCTHoc);
             this.panel2.Location = new System.Drawing.Point(3, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1132, 50);
+            this.panel2.Size = new System.Drawing.Size(584, 50);
             this.panel2.TabIndex = 0;
             // 
             // cbbKhoa
             // 
+            this.cbbKhoa.AllowDrop = true;
             this.cbbKhoa.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbKhoa.FormattingEnabled = true;
-            this.cbbKhoa.Location = new System.Drawing.Point(766, 8);
+            this.cbbKhoa.Location = new System.Drawing.Point(373, 10);
             this.cbbKhoa.Name = "cbbKhoa";
-            this.cbbKhoa.Size = new System.Drawing.Size(356, 30);
+            this.cbbKhoa.Size = new System.Drawing.Size(193, 23);
             this.cbbKhoa.TabIndex = 2;
             this.cbbKhoa.Text = "Chọn khoa";
             this.cbbKhoa.SelectedIndexChanged += new System.EventHandler(this.CbbKhoa_SelectedIndexChanged);
@@ -108,17 +109,18 @@
             // labelKhoa
             // 
             this.labelKhoa.AutoSize = true;
-            this.labelKhoa.Location = new System.Drawing.Point(583, 9);
+            this.labelKhoa.Location = new System.Drawing.Point(302, 10);
             this.labelKhoa.Name = "labelKhoa";
-            this.labelKhoa.Size = new System.Drawing.Size(80, 29);
+            this.labelKhoa.Size = new System.Drawing.Size(56, 19);
             this.labelKhoa.TabIndex = 2;
             this.labelKhoa.Text = "Khoa:";
             // 
             // tbMaCTHoc
             // 
-            this.tbMaCTHoc.Location = new System.Drawing.Point(166, 8);
+            this.tbMaCTHoc.Location = new System.Drawing.Point(127, 7);
             this.tbMaCTHoc.Name = "tbMaCTHoc";
-            this.tbMaCTHoc.Size = new System.Drawing.Size(307, 35);
+            this.tbMaCTHoc.ReadOnly = true;
+            this.tbMaCTHoc.Size = new System.Drawing.Size(88, 26);
             this.tbMaCTHoc.TabIndex = 1;
             this.tbMaCTHoc.TextChanged += new System.EventHandler(this.TbMaCTHoc_TextChanged);
             // 
@@ -127,7 +129,7 @@
             this.lbMaCTHoc.AutoSize = true;
             this.lbMaCTHoc.Location = new System.Drawing.Point(3, 10);
             this.lbMaCTHoc.Name = "lbMaCTHoc";
-            this.lbMaCTHoc.Size = new System.Drawing.Size(138, 29);
+            this.lbMaCTHoc.Size = new System.Drawing.Size(92, 19);
             this.lbMaCTHoc.TabIndex = 0;
             this.lbMaCTHoc.Text = "Mã CT Học";
             // 
@@ -135,9 +137,9 @@
             // 
             this.cbbNganh.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbNganh.FormattingEnabled = true;
-            this.cbbNganh.Location = new System.Drawing.Point(166, 9);
+            this.cbbNganh.Location = new System.Drawing.Point(127, 10);
             this.cbbNganh.Name = "cbbNganh";
-            this.cbbNganh.Size = new System.Drawing.Size(307, 30);
+            this.cbbNganh.Size = new System.Drawing.Size(139, 23);
             this.cbbNganh.TabIndex = 1;
             this.cbbNganh.Text = "Chọn ngành học";
             this.cbbNganh.SelectedIndexChanged += new System.EventHandler(this.CbbNganh_SelectedIndexChanged);
@@ -147,18 +149,18 @@
             this.Nganh.AutoSize = true;
             this.Nganh.Location = new System.Drawing.Point(3, 10);
             this.Nganh.Name = "Nganh";
-            this.Nganh.Size = new System.Drawing.Size(145, 29);
+            this.Nganh.Size = new System.Drawing.Size(99, 19);
             this.Nganh.TabIndex = 0;
             this.Nganh.Text = "Ngành học:";
             // 
             // dgvCTHoc
             // 
             this.dgvCTHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCTHoc.Location = new System.Drawing.Point(3, 206);
+            this.dgvCTHoc.Location = new System.Drawing.Point(3, 548);
             this.dgvCTHoc.Name = "dgvCTHoc";
             this.dgvCTHoc.RowHeadersWidth = 62;
             this.dgvCTHoc.RowTemplate.Height = 28;
-            this.dgvCTHoc.Size = new System.Drawing.Size(1132, 461);
+            this.dgvCTHoc.Size = new System.Drawing.Size(1132, 119);
             this.dgvCTHoc.TabIndex = 5;
             this.dgvCTHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
@@ -170,22 +172,22 @@
             this.panel1.Controls.Add(this.Nganh);
             this.panel1.Location = new System.Drawing.Point(3, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1132, 50);
+            this.panel1.Size = new System.Drawing.Size(584, 50);
             this.panel1.TabIndex = 6;
             // 
             // tbHocKi
             // 
-            this.tbHocKi.Location = new System.Drawing.Point(766, 7);
+            this.tbHocKi.Location = new System.Drawing.Point(373, 7);
             this.tbHocKi.Name = "tbHocKi";
-            this.tbHocKi.Size = new System.Drawing.Size(356, 35);
+            this.tbHocKi.Size = new System.Drawing.Size(62, 26);
             this.tbHocKi.TabIndex = 3;
             // 
             // lbHocKi
             // 
             this.lbHocKi.AutoSize = true;
-            this.lbHocKi.Location = new System.Drawing.Point(583, 10);
+            this.lbHocKi.Location = new System.Drawing.Point(302, 10);
             this.lbHocKi.Name = "lbHocKi";
-            this.lbHocKi.Size = new System.Drawing.Size(85, 29);
+            this.lbHocKi.Size = new System.Drawing.Size(57, 19);
             this.lbHocKi.TabIndex = 2;
             this.lbHocKi.Text = "Học kì";
             // 
@@ -195,7 +197,7 @@
             this.panel3.Controls.Add(this.lbGhiChu);
             this.panel3.Controls.Add(this.tbMaMonHoc);
             this.panel3.Controls.Add(this.lbMaMonHoc);
-            this.panel3.Location = new System.Drawing.Point(3, 150);
+            this.panel3.Location = new System.Drawing.Point(57, 419);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1132, 50);
             this.panel3.TabIndex = 7;
@@ -204,7 +206,7 @@
             // 
             this.tbGhiChu.Location = new System.Drawing.Point(766, 7);
             this.tbGhiChu.Name = "tbGhiChu";
-            this.tbGhiChu.Size = new System.Drawing.Size(356, 35);
+            this.tbGhiChu.Size = new System.Drawing.Size(356, 26);
             this.tbGhiChu.TabIndex = 3;
             // 
             // lbGhiChu
@@ -212,7 +214,7 @@
             this.lbGhiChu.AutoSize = true;
             this.lbGhiChu.Location = new System.Drawing.Point(583, 10);
             this.lbGhiChu.Name = "lbGhiChu";
-            this.lbGhiChu.Size = new System.Drawing.Size(108, 29);
+            this.lbGhiChu.Size = new System.Drawing.Size(71, 19);
             this.lbGhiChu.TabIndex = 2;
             this.lbGhiChu.Text = "Ghi Chú";
             this.lbGhiChu.Click += new System.EventHandler(this.Label2_Click);
@@ -221,7 +223,7 @@
             // 
             this.tbMaMonHoc.Location = new System.Drawing.Point(166, 7);
             this.tbMaMonHoc.Name = "tbMaMonHoc";
-            this.tbMaMonHoc.Size = new System.Drawing.Size(307, 35);
+            this.tbMaMonHoc.Size = new System.Drawing.Size(307, 26);
             this.tbMaMonHoc.TabIndex = 1;
             // 
             // lbMaMonHoc
@@ -229,13 +231,13 @@
             this.lbMaMonHoc.AutoSize = true;
             this.lbMaMonHoc.Location = new System.Drawing.Point(3, 10);
             this.lbMaMonHoc.Name = "lbMaMonHoc";
-            this.lbMaMonHoc.Size = new System.Drawing.Size(157, 29);
+            this.lbMaMonHoc.Size = new System.Drawing.Size(103, 19);
             this.lbMaMonHoc.TabIndex = 0;
             this.lbMaMonHoc.Text = "Mã Môn Học";
             // 
             // fNhapCTHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 741);
             this.Controls.Add(this.panel3);
