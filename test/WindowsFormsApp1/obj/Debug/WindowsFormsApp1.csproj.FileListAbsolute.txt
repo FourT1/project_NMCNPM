@@ -47,3 +47,4 @@ C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DK
 =======
 D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
 >>>>>>> dbf78a7d1ff1e03116ebd7a0545268e5df19658d
+C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.fTraCuuDKHP.resources

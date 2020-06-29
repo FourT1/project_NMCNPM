@@ -17,10 +17,16 @@ namespace NhapCThoc
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-E1G9U7V\NTHUNG;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-E1G9U7V\NTHUNG;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        string chuoiketnoi = @"Data Source=DESKTOP-E1G9U7V\NTHUNG;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True";
+        string sql;
+        SqlConnection ketnoi;
+        SqlCommand thuchien;
+        SqlDataReader docdulieu;
+        int i = 0;
         private void FNhapCTHoc_Load(object sender, EventArgs e)
         {
-            var dap = new SqlDataAdapter("SELECT * FROM Khoa", conn);
+            var dap = new SqlDataAdapter("SELECT * FROM Khoa", ketnoi);
             var table = new DataTable();
             dap.Fill(table);
             cbbKhoa.DisplayMember = "TenKhoa";
