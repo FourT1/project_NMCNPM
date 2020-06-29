@@ -30,6 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cbbMaDoiTuong = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbbMaTinh = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -59,10 +62,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dgvSV = new System.Windows.Forms.DataGridView();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cbbMaDoiTuong = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -72,7 +73,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).BeginInit();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -112,6 +112,36 @@
             this.panel1.Size = new System.Drawing.Size(1394, 293);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel7.Controls.Add(this.cbbMaDoiTuong);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel7.Location = new System.Drawing.Point(515, 156);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(243, 44);
+            this.panel7.TabIndex = 15;
+            // 
+            // cbbMaDoiTuong
+            // 
+            this.cbbMaDoiTuong.FormattingEnabled = true;
+            this.cbbMaDoiTuong.Location = new System.Drawing.Point(104, 10);
+            this.cbbMaDoiTuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbMaDoiTuong.Name = "cbbMaDoiTuong";
+            this.cbbMaDoiTuong.Size = new System.Drawing.Size(128, 24);
+            this.cbbMaDoiTuong.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Mã đối tượng ";
             // 
             // panel2
             // 
@@ -178,7 +208,7 @@
             // btnUpdate
             // 
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(1197, 226);
+            this.btnUpdate.Location = new System.Drawing.Point(1038, 226);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(187, 44);
@@ -190,7 +220,7 @@
             // btnDel
             // 
             this.btnDel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDel.Location = new System.Drawing.Point(619, 226);
+            this.btnDel.Location = new System.Drawing.Point(560, 226);
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(187, 44);
@@ -225,7 +255,21 @@
             // 
             // cbbKhoa
             // 
+            this.cbbKhoa.AutoCompleteCustomSource.AddRange(new string[] {
+            "CNPM",
+            "CNTT",
+            "KHMT",
+            "KTMT",
+            "HTTT",
+            "TMĐT"});
+            this.cbbKhoa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbbKhoa.FormattingEnabled = true;
+            this.cbbKhoa.Items.AddRange(new object[] {
+            "Hệ Thống Thông Tin ",
+            "Khoa Học Máy Tính ",
+            "Công Nghệ Thông Tin",
+            "Mạng Máy Tính",
+            "Công Nghệ Phần Mềm "});
             this.cbbKhoa.Location = new System.Drawing.Point(104, 13);
             this.cbbKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbKhoa.Name = "cbbKhoa";
@@ -238,9 +282,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(25, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 17);
+            this.label8.Size = new System.Drawing.Size(68, 17);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Khoa:";
+            this.label8.Text = "Mã Khoa ";
             // 
             // panel8
             // 
@@ -256,7 +300,21 @@
             // 
             // cbbNganh
             // 
+            this.cbbNganh.AutoCompleteCustomSource.AddRange(new string[] {
+            "HTTT",
+            "CNPM",
+            "KTMT",
+            "KHMT",
+            "CNTT"});
             this.cbbNganh.FormattingEnabled = true;
+            this.cbbNganh.Items.AddRange(new object[] {
+            "Hệ Thống Thông Tin",
+            "Khoa Học Máy Tính ",
+            "Công Nghệ Thông Tin ",
+            "Công Nghệ Phần Mềm ",
+            "Mạng Máy Tính ",
+            "Thương Mại Điện Tử ",
+            "Kỹ Thuật Máy Tính "});
             this.cbbNganh.Location = new System.Drawing.Point(104, 5);
             this.cbbNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbNganh.Name = "cbbNganh";
@@ -268,9 +326,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(25, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 17);
+            this.label7.Size = new System.Drawing.Size(77, 17);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Ngành:";
+            this.label7.Text = "Mã Ngành ";
             // 
             // panel6
             // 
@@ -287,6 +345,10 @@
             // 
             // cbbbGioiTinh
             // 
+            this.cbbbGioiTinh.AutoCompleteCustomSource.AddRange(new string[] {
+            "Nam ",
+            "Nữ ",
+            "Không xác định "});
             this.cbbbGioiTinh.FormattingEnabled = true;
             this.cbbbGioiTinh.Location = new System.Drawing.Point(104, 10);
             this.cbbbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -398,7 +460,7 @@
             this.label11.BackColor = System.Drawing.Color.Silver;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label11.Location = new System.Drawing.Point(0, 378);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(1394, 349);
@@ -409,44 +471,14 @@
             // dgvSV
             // 
             this.dgvSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSV.Location = new System.Drawing.Point(12, 443);
+            this.dgvSV.Location = new System.Drawing.Point(56, 432);
             this.dgvSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvSV.Name = "dgvSV";
             this.dgvSV.RowHeadersWidth = 51;
             this.dgvSV.RowTemplate.Height = 24;
-            this.dgvSV.Size = new System.Drawing.Size(1445, 284);
+            this.dgvSV.Size = new System.Drawing.Size(1222, 284);
             this.dgvSV.TabIndex = 6;
             this.dgvSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel7.Controls.Add(this.cbbMaDoiTuong);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel7.Location = new System.Drawing.Point(515, 156);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(243, 44);
-            this.panel7.TabIndex = 15;
-            // 
-            // cbbMaDoiTuong
-            // 
-            this.cbbMaDoiTuong.FormattingEnabled = true;
-            this.cbbMaDoiTuong.Location = new System.Drawing.Point(104, 9);
-            this.cbbMaDoiTuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbMaDoiTuong.Name = "cbbMaDoiTuong";
-            this.cbbMaDoiTuong.Size = new System.Drawing.Size(128, 24);
-            this.cbbMaDoiTuong.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 17);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Mã đối tượng ";
             // 
             // QuanLySV
             // 
@@ -462,6 +494,8 @@
             this.Text = "YC1";
             this.Load += new System.EventHandler(this.QuanLySV_Load);
             this.panel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -479,8 +513,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }

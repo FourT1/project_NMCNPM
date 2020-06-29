@@ -36,5 +36,10 @@ namespace TraCuu_DKHP
         {
 
         }
+
+        private void fTraCuuDKHP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
