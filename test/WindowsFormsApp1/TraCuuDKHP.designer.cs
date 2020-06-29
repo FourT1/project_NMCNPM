@@ -32,13 +32,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvDKHP = new System.Windows.Forms.DataGridView();
             this.gbAccessDKHP = new System.Windows.Forms.GroupBox();
+            this.tbMSSVAccess = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbSoPhieuAccess = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tbMSSVAccess = new System.Windows.Forms.TextBox();
             this.bttDKMH = new System.Windows.Forms.Button();
             this.bttXoaMH = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.dgvInfoDKHP = new System.Windows.Forms.DataGridView();
             this.gbInfoDKHP = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.gbInfo = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bttReset = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKHP)).BeginInit();
             this.gbAccessDKHP.SuspendLayout();
@@ -121,6 +121,14 @@
             this.gbAccessDKHP.TabStop = false;
             this.gbAccessDKHP.Text = "Truy cập phiếu DKHP";
             // 
+            // tbMSSVAccess
+            // 
+            this.tbMSSVAccess.Location = new System.Drawing.Point(241, 15);
+            this.tbMSSVAccess.Name = "tbMSSVAccess";
+            this.tbMSSVAccess.Size = new System.Drawing.Size(76, 20);
+            this.tbMSSVAccess.TabIndex = 12;
+            this.tbMSSVAccess.TextChanged += new System.EventHandler(this.tbMSSVAccess_TextChanged);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -148,14 +156,6 @@
             this.label8.Size = new System.Drawing.Size(62, 15);
             this.label8.TabIndex = 14;
             this.label8.Text = "Số phiếu: ";
-            // 
-            // tbMSSVAccess
-            // 
-            this.tbMSSVAccess.Location = new System.Drawing.Point(241, 15);
-            this.tbMSSVAccess.Name = "tbMSSVAccess";
-            this.tbMSSVAccess.Size = new System.Drawing.Size(76, 20);
-            this.tbMSSVAccess.TabIndex = 12;
-            this.tbMSSVAccess.TextChanged += new System.EventHandler(this.tbMSSVAccess_TextChanged);
             // 
             // bttDKMH
             // 
@@ -187,6 +187,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(392, 53);
             this.panel1.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(283, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 54);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Làm mới";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvInfoDKHP
             // 
@@ -338,15 +348,6 @@
             this.bttReset.Text = "Làm mới";
             this.bttReset.UseVisualStyleBackColor = true;
             this.bttReset.Click += new System.EventHandler(this.bttReset_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(283, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Làm mới";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // fTraCuuDKHP
             // 

@@ -13,9 +13,12 @@ using WindowsFormsApp1;
 
 namespace TraCuu_DKHP
 {
+
     public partial class fTraCuuDKHP : Form
     {
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6TDDS79;Initial Catalog=QLHP;Integrated Security=True");
+        
+     
         public fTraCuuDKHP()
         {
             InitializeComponent();
@@ -24,6 +27,9 @@ namespace TraCuu_DKHP
             // Nếu cả 2 tb rỗng, trả về danh sách
            
         }
+
+        
+
 
         public void LoadDKHPOriginal()
         {
@@ -157,8 +163,28 @@ namespace TraCuu_DKHP
         
         private void bttDKMH_Click(object sender, EventArgs e)
         {
-            fTraCuuDKHP_2 f2 = new fTraCuuDKHP_2();
-            f2.ShowDialog();
+            if (tbMSSV.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn phiếu DKHP");
+            }
+            else
+            {
+                fTraCuuDKHP_DKMH frm2 = new fTraCuuDKHP_DKMH(tbMSSV.Text, tbNamHoc.Text, tbHocKy.Text, tbSoPhieu.Text);
+                frm2.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cmd = new SqlCommand("access_DKHP", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@sophieu", SqlDbType.VarChar).Value = tbSoPhieu.Text;
+            cmd.Parameters.Add("@masv", SqlDbType.VarChar).Value = tbMSSV.Text;
+            var dap = new SqlDataAdapter(cmd);
+            var table = new DataTable();
+            dap.Fill(table);
+            dgvInfoDKHP.DataSource = table;
+            dgvInfoDKHP.Refresh();
         }
     }
 }
