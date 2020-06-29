@@ -35,6 +35,7 @@ namespace ChuaDongHP
             dtgvChuaDongHP.DataSource = table;
             dtgvChuaDongHP.AllowUserToAddRows = false;
             dtgvChuaDongHP.EditMode = DataGridViewEditMode.EditProgrammatically;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
