@@ -66,6 +66,12 @@ namespace TraCuu_DKHP
 
         }
 
+<<<<<<< HEAD
+        private void fTraCuuDKHP_Load(object sender, EventArgs e)
+        {
+
+        }
+=======
         private void bttAccessDKHP_Click(object sender, EventArgs e)
         {
 
@@ -186,5 +192,6 @@ namespace TraCuu_DKHP
             dgvInfoDKHP.DataSource = table;
             dgvInfoDKHP.Refresh();
         }
+>>>>>>> c8a98dfb559dbc34296e565520c01f27918362c7
     }
 }

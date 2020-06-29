@@ -46,5 +46,43 @@ C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\Wi
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
 =======
 D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DSMonHocMo.DSMonHocMo.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\ChuaDongHP.Form1.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\NhapCThoc.fNhapCTHoc.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_PhieuThu.Form1.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.fTraCuuDKHP.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.QuanLySV.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DSMonHoc.resources
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 >>>>>>> dbf78a7d1ff1e03116ebd7a0545268e5df19658d
+>>>>>>> fcddb350d43bf91369de1b63f39980c92daea20c
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DSMonHocMo.DSMonHocMo.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\ChuaDongHP.Form1.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\NhapCThoc.fNhapCTHoc.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_PhieuThu.Form1.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.fTraCuuDKHP.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.QuanLySV.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DSMonHoc.resources
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.fTraCuuDKHP.resources
+>>>>>>> c8a98dfb559dbc34296e565520c01f27918362c7
