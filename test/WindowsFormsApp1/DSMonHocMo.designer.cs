@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvDSMonHocMo = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NamHoc = new System.Windows.Forms.Label();
@@ -36,22 +37,30 @@
             this.HocKi = new System.Windows.Forms.Label();
             this.btXacNhanMonHocMo = new System.Windows.Forms.Button();
             this.btQuayLaiDSMHMo = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMonHocMo)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvDSMonHocMo);
             this.panel1.Location = new System.Drawing.Point(4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(914, 425);
             this.panel1.TabIndex = 0;
+            // 
+            // dgvDSMonHocMo
+            // 
+            this.dgvDSMonHocMo.AllowUserToOrderColumns = true;
+            this.dgvDSMonHocMo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSMonHocMo.Location = new System.Drawing.Point(3, 53);
+            this.dgvDSMonHocMo.Name = "dgvDSMonHocMo";
+            this.dgvDSMonHocMo.RowHeadersWidth = 62;
+            this.dgvDSMonHocMo.RowTemplate.Height = 28;
+            this.dgvDSMonHocMo.Size = new System.Drawing.Size(911, 358);
+            this.dgvDSMonHocMo.TabIndex = 0;
+            this.dgvDSMonHocMo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMonHocMo_CellContentClick);
             // 
             // panel3
             // 
@@ -71,6 +80,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 35);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // NamHoc
             // 
@@ -91,6 +101,7 @@
             this.cbHocKi.Size = new System.Drawing.Size(261, 30);
             this.cbHocKi.TabIndex = 1;
             this.cbHocKi.Text = "Chọn học kì";
+            this.cbHocKi.SelectedIndexChanged += new System.EventHandler(this.CbHocKi_SelectedIndexChanged);
             // 
             // HocKi
             // 
@@ -122,43 +133,6 @@
             this.btQuayLaiDSMHMo.Text = "Quay lại";
             this.btQuayLaiDSMHMo.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(914, 358);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 300F;
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Mã môn";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 250;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Tên môn học";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 500;
-            // 
             // DSMonHocMo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -172,9 +146,9 @@
             this.Name = "DSMonHocMo";
             this.Text = "Danh sách môn học mở";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSMonHocMo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,10 +163,7 @@
         private System.Windows.Forms.Label HocKi;
         private System.Windows.Forms.Button btXacNhanMonHocMo;
         private System.Windows.Forms.Button btQuayLaiDSMHMo;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridView dgvDSMonHocMo;
     }
 }
 
