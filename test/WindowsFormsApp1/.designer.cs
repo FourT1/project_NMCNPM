@@ -177,6 +177,7 @@
             this.btThoat.TabIndex = 14;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btInPhieu
             // 
@@ -188,6 +189,7 @@
             this.btInPhieu.TabIndex = 15;
             this.btInPhieu.Text = "In Phiếu";
             this.btInPhieu.UseVisualStyleBackColor = true;
+            this.btInPhieu.Click += new System.EventHandler(this.btInPhieu_Click);
             // 
             // panel3
             // 

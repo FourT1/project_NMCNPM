@@ -47,5 +47,15 @@ namespace ChuaDongHP
             cbHocKy.ValueMember = "MaHK";
             cbHocKy.DataSource = table;
         }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btInPhieu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

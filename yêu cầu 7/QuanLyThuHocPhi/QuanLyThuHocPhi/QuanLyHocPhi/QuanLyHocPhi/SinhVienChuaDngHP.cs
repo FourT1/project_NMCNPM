@@ -29,9 +29,13 @@ namespace QuanLyHocPhi
             cbHocKy.DisplayMember = "HocKy";
             cbHocKy.ValueMember = "MaHK";
             cbHocKy.DataSource = table;
-            
+
+            //cbNamHoc.DisplayMember = "TenNH";
+            //cbNamHoc.ValueMember = "MaNH";
+            //cbNamHoc.DataSource = table;
 
 
+           
         }
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -50,7 +54,7 @@ namespace QuanLyHocPhi
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int MaHK = Convert.ToInt32(cbHocKy.SelectedValue);
-            var dap = new SqlDataAdapter("SELECT MaNH AS NĂM_HỌC ,MaSV ,SoTienDK AS SỐ_TIỀN_ĐĂNG_KÝ ,SoTienDaDong AS SỐ_TIỀN_ĐÃ_ĐÓNG,SoTienConLai AS SỐ_TIỀN_CÒN_LẠI FROM CT_DS_CHUADONGHP WHERE MaHK = "+MaHK+" ", connection);
+            var dap = new SqlDataAdapter("SELECT * FROM CT_DS_CHUADONGHP WHERE MaHK = "+MaHK+" ", connection);
             var table = new DataTable();
             dap.Fill(table);
             dtgvChuaDongHP.DataSource = table;
@@ -78,6 +82,48 @@ namespace QuanLyHocPhi
        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int MaNH = Convert.ToInt32(cbNamHoc.SelectedValue);
+            //var dap = new SqlDataAdapter("SELECT MaNH FROM CT_DS_CHUADONGHP WHERE MaHK = " + MaNH + " ", connection);
+            //var table = new DataTable();
+            //dap.Fill(table);
+            //dtgvChuaDongHP.DataSource = table;
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btInPhieu_Click(object sender, EventArgs e)
+        {
+            ReportCDHP f = new ReportCDHP();
+            
+            f.ShowDialog();
+          
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rpViewer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
         {
 
         }
