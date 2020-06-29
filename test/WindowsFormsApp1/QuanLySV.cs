@@ -18,13 +18,13 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         SqlCommand command;
-        SqlConnection conn = new SqlConnection(@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLHP;Integrated Security=True");
         // Boolean addSV = false;
         DataTable table = new DataTable();
         SqlDataAdapter adapter = new SqlDataAdapter();
-        string str = (@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLVDKHPVTHPSV;Integrated Security=True");
+        
         //// hàm load data 
-       void loaddata()
+        void loaddata()
         {
            command = conn.CreateCommand();
            command.CommandText = "select * from SinhVien";

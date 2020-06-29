@@ -157,7 +157,7 @@ namespace TraCuu_DKHP
         
         private void bttDKMH_Click(object sender, EventArgs e)
         {
-            fTraCuuDKHP_2 f2 = new fTraCuuDKHP_2();
+            fTraCuuDKHP f2 = new fTraCuuDKHP();
             f2.ShowDialog();
         }
     }

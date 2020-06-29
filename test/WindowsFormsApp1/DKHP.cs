@@ -12,7 +12,7 @@ namespace DKHP
 {
     public partial class fDKHP : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6TDDS79;Initial Catalog=QLHP;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=FOURT1\THANHTUAN;Initial Catalog=QLHP;Integrated Security=True");
         public fDKHP()
         {
             InitializeComponent();
