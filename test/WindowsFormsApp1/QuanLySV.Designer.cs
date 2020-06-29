@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ComboBox cbbNganh;
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -46,7 +47,6 @@
             this.cbbKhoa = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.cbbNganh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbbbGioiTinh = new System.Windows.Forms.ComboBox();
@@ -62,6 +62,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dgvSV = new System.Windows.Forms.DataGridView();
+            cbbNganh = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -263,6 +264,7 @@
             "HTTT",
             "TMĐT"});
             this.cbbKhoa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbbKhoa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbKhoa.FormattingEnabled = true;
             this.cbbKhoa.Items.AddRange(new object[] {
             "Hệ Thống Thông Tin ",
@@ -289,7 +291,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel8.Controls.Add(this.cbbNganh);
+            this.panel8.Controls.Add(cbbNganh);
             this.panel8.Controls.Add(this.label7);
             this.panel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel8.Location = new System.Drawing.Point(828, 57);
@@ -300,14 +302,16 @@
             // 
             // cbbNganh
             // 
-            this.cbbNganh.AutoCompleteCustomSource.AddRange(new string[] {
+            cbbNganh.AutoCompleteCustomSource.AddRange(new string[] {
             "HTTT",
             "CNPM",
             "KTMT",
             "KHMT",
             "CNTT"});
-            this.cbbNganh.FormattingEnabled = true;
-            this.cbbNganh.Items.AddRange(new object[] {
+            cbbNganh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cbbNganh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cbbNganh.FormattingEnabled = true;
+            cbbNganh.Items.AddRange(new object[] {
             "Hệ Thống Thông Tin",
             "Khoa Học Máy Tính ",
             "Công Nghệ Thông Tin ",
@@ -315,11 +319,11 @@
             "Mạng Máy Tính ",
             "Thương Mại Điện Tử ",
             "Kỹ Thuật Máy Tính "});
-            this.cbbNganh.Location = new System.Drawing.Point(104, 5);
-            this.cbbNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbNganh.Name = "cbbNganh";
-            this.cbbNganh.Size = new System.Drawing.Size(273, 24);
-            this.cbbNganh.TabIndex = 1;
+            cbbNganh.Location = new System.Drawing.Point(104, 5);
+            cbbNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            cbbNganh.Name = "cbbNganh";
+            cbbNganh.Size = new System.Drawing.Size(273, 24);
+            cbbNganh.TabIndex = 1;
             // 
             // label7
             // 
@@ -349,6 +353,8 @@
             "Nam ",
             "Nữ ",
             "Không xác định "});
+            this.cbbbGioiTinh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbbbGioiTinh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbbGioiTinh.FormattingEnabled = true;
             this.cbbbGioiTinh.Location = new System.Drawing.Point(104, 10);
             this.cbbbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -528,7 +534,6 @@
         private System.Windows.Forms.ComboBox cbbKhoa;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox cbbNganh;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;

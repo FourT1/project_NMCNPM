@@ -46,7 +46,6 @@ C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\Wi
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
 =======
 D:\Github\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\DKHP.fDKHP.resources
-<<<<<<< HEAD
 D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 D:\Nguyễn Khả Trường\project_NMCNPM\test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
@@ -85,7 +84,5 @@ D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj
 D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\NMCNPM\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-=======
->>>>>>> dbf78a7d1ff1e03116ebd7a0545268e5df19658d
 C:\Users\ASUS\Documents\GitHub\project_NMCNPM\test\WindowsFormsApp1\obj\Debug\TraCuu_DKHP.fTraCuuDKHP.resources
 >>>>>>> c8a98dfb559dbc34296e565520c01f27918362c7

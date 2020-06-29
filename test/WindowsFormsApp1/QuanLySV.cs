@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
             cbbMaDoiTuong.Text = dgvSV.Rows[i].Cells[3].Value.ToString();
             cbbMaHuyen.Text = dgvSV.Rows[i].Cells[4].Value.ToString();
             cbbMaTinh.Text = dgvSV.Rows[i].Cells[5].Value.ToString();
-            cbbNganh.Text = dgvSV.Rows[i].Cells[6].Value.ToString();
+            cbb.Text = dgvSV.Rows[i].Cells[6].Value.ToString();
             cbbbGioiTinh.Text = dgvSV.Rows[i].Cells[7].Value.ToString();
         }
 
